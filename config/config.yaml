@@ -1,0 +1,30 @@
+project:
+  name: IndicMed
+  random_seed: 42
+
+languages:
+  supported: [en, hi, te, ta]
+
+retrieval:
+  top_k: 3
+  default_method: semantic
+  default_multilingual_strategy: translate
+  text_field: answer
+
+models:
+  embedding_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  translation:
+    backend: indictrans2
+    en_to_indic: ai4bharat/indictrans2-en-indic-dist-200M
+    indic_to_en: ai4bharat/indictrans2-indic-en-dist-200M
+
+paths:
+  dataset: data/processed/medquad_clean.csv
+  medical_faqs: data/processed/medical_faqs.csv
+  embeddings: indexes/faq_embeddings.npy
+  metadata: indexes/faq_metadata.pkl
+
+application:
+  show_similarity: true
+  show_sources: true
+  max_answer_characters: 1400

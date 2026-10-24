@@ -1,0 +1,10 @@
+{
+  "sample_size": 200,
+  "random_seed": 42,
+  "languages": [
+    "en",
+    "hi",
+    "te",
+    "ta"
+  ]
+}

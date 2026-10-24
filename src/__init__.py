@@ -1,0 +1,2 @@
+"""IndicMed package."""
+

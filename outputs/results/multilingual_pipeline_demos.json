@@ -1,0 +1,54 @@
+[
+  {
+    "language": "en",
+    "query": "What is asthma?",
+    "english_query": "What is asthma?",
+    "retrieval_strategy": "semantic",
+    "document_id": "medquad-7021d577d48b5e05",
+    "category": "3_GHR_QA",
+    "source": "GHR",
+    "source_url": "https://ghr.nlm.nih.gov/condition/allergic-asthma",
+    "similarity_score": 0.8389370441436768,
+    "grounded_english_answer": "Asthma is a breathing disorder characterized by inflammation of the airways and recurrent episodes of breathing difficulty. These episodes, sometimes referred to as asthma attacks, are triggered by irritation of the inflamed airways. In allergic asthma, the attacks occur when substances known as allergens are inhaled, causing an allergic reaction. Allergens are harmless substances that the body's immune system mistakenly reacts to as though they are harmful. Common allergens include pollen, dust, animal dander, and mold. The immune response leads to the symptoms of asthma. Allergic asthma is the most common form of the disorder. A hallmark of asthma is bronchial hyperresponsiveness, which means the airways are especially sensitive to irritants and respond excessively. Because of this hyperresponsiveness, attacks can be triggered by irritants other than allergens, such as physical activity, respiratory infections, or exposure to tobacco smoke, in people with allergic asthma. An asthma attack is characterized by tightening of the muscles around the airways (bronchoconstriction), which narrows the airway and makes breathing difficult. Additionally, the immune reaction can lead to swelling of the airways and overproduction of mucus. During an attack, an affected individual can experience chest tightness, wheezing, shortness of breath, and coughing.",
+    "translated_answer": "Asthma is a breathing disorder characterized by inflammation of the airways and recurrent episodes of breathing difficulty. These episodes, sometimes referred to as asthma attacks, are triggered by irritation of the inflamed airways. In allergic asthma, the attacks occur when substances known as allergens are inhaled, causing an allergic reaction. Allergens are harmless substances that the body's immune system mistakenly reacts to as though they are harmful. Common allergens include pollen, dust, animal dander, and mold. The immune response leads to the symptoms of asthma. Allergic asthma is the most common form of the disorder. A hallmark of asthma is bronchial hyperresponsiveness, which means the airways are especially sensitive to irritants and respond excessively. Because of this hyperresponsiveness, attacks can be triggered by irritants other than allergens, such as physical activity, respiratory infections, or exposure to tobacco smoke, in people with allergic asthma. An asthma attack is characterized by tightening of the muscles around the airways (bronchoconstriction), which narrows the airway and makes breathing difficult. Additionally, the immune reaction can lead to swelling of the airways and overproduction of mucus. During an attack, an affected individual can experience chest tightness, wheezing, shortness of breath, and coughing."
+  },
+  {
+    "language": "hi",
+    "query": "मधुमेह के लक्षण क्या हैं?",
+    "english_query": "What are the symptoms of diabetes?",
+    "retrieval_strategy": "translate_semantic",
+    "document_id": "medquad-2cd2681e7368ea69",
+    "category": "5_NIDDK_QA",
+    "source": "NIDDK",
+    "source_url": "http://www.niddk.nih.gov/health-information/health-topics/Diabetes/your-guide-diabetes/Pages/index.aspx",
+    "similarity_score": 0.8811297416687012,
+    "grounded_english_answer": "The signs and symptoms of diabetes are - being very thirsty - urinating often - feeling very hungry - feeling very tired - losing weight without trying - sores that heal slowly - dry, itchy skin - feelings of pins and needles in your feet - losing feeling in your feet - blurry eyesight Some people with diabetes dont have any of these signs or symptoms. The only way to know if you have diabetes is to have your doctor do a blood test.",
+    "translated_answer": "मधुमेह के संकेत और लक्षण हैं-बहुत प्यास लगना-अक्सर पेशाब करना-बहुत भूख लगना-बहुत थका हुआ महसूस करना-बिना कोशिश किए वजन कम करना-घाव जो धीरे-धीरे ठीक हो जाते हैं-सूखी, खुजली वाली त्वचा-आपके पैरों में पिन और सुइयों की भावना-आपके पैरों में भावना कम होना-धुंधली दृष्टि मधुमेह वाले कुछ लोगों में इनमें से कोई भी संकेत या लक्षण नहीं होते हैं। यह जानने का एकमात्र तरीका है कि आपको मधुमेह है या नहीं, अपने डॉक्टर से रक्त परीक्षण कराना है।"
+  },
+  {
+    "language": "te",
+    "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+    "english_query": "What are the causes of migraines?",
+    "retrieval_strategy": "translate_semantic",
+    "document_id": "medquad-8ba4249df8679026",
+    "category": "6_NINDS_QA",
+    "source": "NINDS",
+    "source_url": "http://www.ninds.nih.gov/disorders/migraine/migraine.htm",
+    "similarity_score": 0.7887568473815918,
+    "grounded_english_answer": "The pain of a migraine headache is often described as an intense pulsing or throbbing pain in one area of the head. However, it is much more; the International Headache Society diagnoses a migraine by its pain and number of attacks (at least 5, lasting 4-72 hours if untreated), and additional symptoms including nausea and/or vomiting, or sensitivity to both light and sound. Migraine is three times more common in women than in men and affects more than 10 percent of people worldwide. Roughly one-third of affected individuals can predict the onset of a migraine because it is preceded by an \"aura,\" visual disturbances that appear as flashing lights, zig-zag lines or a temporary loss of vision. People with migraine tend to have recurring attacks triggered by a number of different factors, including stress, anxiety, hormonal changes, bright or flashing lights, lack of food or sleep, and dietary substances. Migraine in some women may relate to changes in hormones and hormonal levels during their menstrual cycle. For many years, scientists believed that migraines were linked to the dilation and constriction of blood vessels in the head. Investigators now believe that migraine has a genetic cause.",
+    "translated_answer": "మైగ్రేన్ తలనొప్పి యొక్క నొప్పిని తరచుగా తల యొక్క ఒక ప్రాంతంలో తీవ్రమైన పల్స్ లేదా థ్రబ్బింగ్ నొప్పిగా వర్ణిస్తారు. అయితే, ఇది చాలా ఎక్కువ; ఇంటర్నేషనల్ హెడ్ఏక్ సొసైటీ మైగ్రేన్ను దాని నొప్పి మరియు దాడుల సంఖ్య (కనీసం 5, చికిత్స చేయకపోతే కనీసం 5 గంటలు), మరియు వికారం మరియు/లేదా వాంతులు, లేదా కాంతి మరియు శబ్దం రెండింటికీ సున్నితత్వం వంటి అదనపు లక్షణాల ద్వారా నిర్ధారిస్తుంది. మైగ్రేన్ అనేది పురుషుల కంటే మహిళల్లో మూడు రెట్లు ఎక్కువ సాధారణం మరియు ప్రపంచవ్యాప్తంగా 10 శాతం కంటే ఎక్కువ మందిని ప్రభావితం చేస్తుంది. దాదాపు మూడింట ఒక వంతు మంది బాధిత వ్యక్తులు మైగ్రేన్ ప్రారంభాన్ని అంచనా వేయవచ్చు ఎందుకంటే దీనికి ముందు \"ఆరా\", మెరిసే లైట్లు, జిగ్-జాగ్ లైన్లు లేదా తాత్కాలిక దృష్టి నష్టం వంటి దృశ్య ఆటంకాలు కనిపిస్తాయి. మైగ్రేన్ ఉన్న వ్యక్తులు అనేక కారణాల వల్ల పునరావృతమయ్యే దాడులను కలిగి ఉంటారు, ఒత్తిడి, ఒత్తిడి, ఆందోళన, మరియు అనేక హార్మోన్ల యొక్క ప్రకాశవంతమైన మార్పులతో సహా."
+  },
+  {
+    "language": "ta",
+    "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+    "english_query": "How is tuberculosis diagnosed?",
+    "retrieval_strategy": "translate_semantic",
+    "document_id": "medquad-05359abe8d0fb2fb",
+    "category": "4_MPlus_Health_Topics_QA",
+    "source": "MPlusHealthTopics",
+    "source_url": "https://www.nlm.nih.gov/medlineplus/tuberculosis.html",
+    "similarity_score": 0.7578004598617554,
+    "grounded_english_answer": "Tuberculosis (TB) is a disease caused by bacteria called Mycobacterium tuberculosis. The bacteria usually attack the lungs, but they can also damage other parts of the body. TB spreads through the air when a person with TB of the lungs or throat coughs, sneezes, or talks. If you have been exposed, you should go to your doctor for tests. You are more likely to get TB if you have a weak immune system. Symptoms of TB in the lungs may include - A bad cough that lasts 3 weeks or longer - Weight loss - Loss of appetite - Coughing up blood or mucus - Weakness or fatigue - Fever - Night sweats Skin tests, blood tests, x-rays, and other tests can tell if you have TB. If not treated properly, TB can be deadly. You can usually cure active TB by taking several medicines for a long period of time. NIH: National Institute of Allergy and Infectious Diseases",
+    "translated_answer": "காசநோய் (டிபி) என்பது மைக்கோபாக்டீரியம் காசநோய் எனப்படும் பாக்டீரியாவால் ஏற்படும் ஒரு நோயாகும். பாக்டீரியாக்கள் பொதுவாக நுரையீரலைத் தாக்குகின்றன, ஆனால் அவை உடலின் பிற பகுதிகளையும் சேதப்படுத்தலாம். நுரையீரலின் காசநோய் அல்லது தொண்டை காசநோய் உள்ள ஒருவர் இருமல், தும்மல் அல்லது பேசும்போது காசநோய் காற்று வழியாக பரவுகிறது. நீங்கள் வெளிப்பட்டிருந்தால், நீங்கள் உங்கள் மருத்துவரிடம் சோதனைகளுக்காக செல்ல வேண்டும். உங்களுக்கு பலவீனமான நோயெதிர்ப்பு அமைப்பு இருந்தால் காசநோய் வர அதிக வாய்ப்பு உள்ளது. நுரையீரலில் காசநோயின் அறிகுறிகளில்-3 வாரங்கள் அல்லது அதற்கு மேல் நீடிக்கும் ஒரு கெட்ட இருமல்-எடை இழப்பு-பசி இழப்பு-இரத்தம் அல்லது சளி-பலவீனம் அல்லது சோர்வு-காய்ச்சல்-இரவு வியர்வை தோல் சோதனைகள், இரத்தப் பரிசோதனைகள், எக்ஸ்-ரே மற்றும் பிற சோதனைகள் உங்களுக்கு காசநோய் இருக்கிறதா என்பதைக் கூறலாம். சரியாக சிகிச்சையளிக்கப்படாவிட்டால், காசநோய் ஆபத்தானது. பொதுவாக நீண்ட காலத்திற்கு பல நோய்களைக் குணப்படுத்தலாம்."
+  }
+]

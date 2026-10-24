@@ -1,0 +1,47 @@
+IndicMed MedQuAD Dataset Audit
+================================
+Raw XML files processed: 11,274
+Unique relative XML paths: 11,274
+Byte-identical XML file groups: 0
+Files participating in byte-identical groups: 0
+Total QAPair XML nodes: 47,441
+QAPair nodes with empty questions: 0
+QAPair nodes with empty answers: 31,034
+Raw valid question-answer rows: 16,407
+Unique questions: 14,979
+Duplicate question rows removed if deduping question only: 1,428
+Unique answers: 15,809
+Duplicate answer rows removed if deduping answer only: 598
+Unique exact question-answer pairs: 16,359
+Rows removed by current exact-pair deduplication: 48
+Rows belonging to a repeated exact-pair group: 80
+Distinct repeated exact-pair groups: 32
+Repeated exact-pair groups crossing source directories: 0
+
+Counts by source/category directory
+            source_category  xml_files  qapair_nodes  empty_answer_nodes  raw_pairs  unique_questions  unique_answers  unique_pairs_within_source  duplicate_rows_removed_within_source  rows_part_of_duplicate_pair
+           10_MPlus_ADAM_QA       4366         17348               17348          0                 0               0                           0                                     0                            0
+           11_MPlusDrugs_QA       1312         12889               12889          0                 0               0                           0                                     0                            0
+12_MPlusHerbsSupplements_QA         99           792                 792          0                 0               0                           0                                     0                            0
+             1_CancerGov_QA        116           729                   0        729               683             701                         729                                     0                            0
+                  2_GARD_QA       2685          5394                   5       5389              5389            5339                        5389                                     0                            0
+                   3_GHR_QA       1086          5430                   0       5430              5430            4978                        5430                                     0                            0
+   4_MPlus_Health_Topics_QA        981           981                   0        981               981             981                         981                                     0                            0
+                 5_NIDDK_QA        157          1192                   0       1192               828            1135                        1144                                    48                           80
+                 6_NINDS_QA        277          1088                   0       1088              1085            1086                        1088                                     0                            0
+          7_SeniorHealth_QA         48           769                   0        769               288             769                         769                                     0                            0
+             8_NHLBI_QA_XML         88           559                   0        559               555             559                         559                                     0                            0
+                   9_CDC_QA         59           270                   0        270               259             261                         270                                     0                            0
+
+Top 10 exact duplicate groups
+ occurrences                                     question                                                                                                                                                                                                                                                                                               answer_snippet sources source_directories                                                                                                           raw_files_sample
+           8             What causes Causes of Diabetes ? Other types of diabetes have a variety of possible causes. Genetic Mutations Affecting Beta Cells, Insulin, and Insulin Action Some relatively uncommon forms of diabetes known as monogenic diabetes are caused by mutations, or changes, in a single gene. These mutations are usually inherited, but some   NIDDK         5_NIDDK_QA 5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000070.xml
+           4             What causes Causes of Diabetes ? Type 1 diabetes is caused by a lack of insulin due to the destruction of insulin-producing beta cells in the pancreas. In type 1 diabetesan autoimmune diseasethe bodys immune system attacks and destroys the beta cells. Normally, the immune system protects the body from infection by identifying and d   NIDDK         5_NIDDK_QA                          5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000070.xml | 5_NIDDK_QA/0000071.xml
+           4             What causes Causes of Diabetes ? Type 2 diabetesthe most common form of diabetesis caused by a combination of factors, including insulin resistance, a condition in which the bodys muscle, fat, and liver cells do not use insulin effectively. Type 2 diabetes develops when the body can no longer produce enough insulin to compensate fo   NIDDK         5_NIDDK_QA                          5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000070.xml | 5_NIDDK_QA/0000071.xml
+           4             What causes Causes of Diabetes ? Insulin Resistance and Beta Cell Dysfunction Hormones produced by the placenta and other pregnancy-related factors contribute to insulin resistance, which occurs in all women during late pregnancy. Insulin resistance increases the amount of insulin needed to control blood glucose levels. If the panc   NIDDK         5_NIDDK_QA                          5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000070.xml | 5_NIDDK_QA/0000071.xml
+           4           What is (are) Causes of Diabetes ? Diabetes is a complex group of diseases with a variety of causes. People with diabetes have high blood glucose, also called high blood sugar or hyperglycemia. Diabetes is a disorder of metabolismthe way the body uses digested food for energy. The digestive tract breaks down carbohydratessugars and s   NIDDK         5_NIDDK_QA                          5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000070.xml | 5_NIDDK_QA/0000071.xml
+           4          What to do for Causes of Diabetes ? - Diabetes is a complex group of diseases with a variety of causes. Scientists believe genes and environmental factors interact to cause diabetes in most cases. - People with diabetes have high blood glucose, also called high blood sugar or hyperglycemia. Diabetes develops when the body doesnt make    NIDDK         5_NIDDK_QA                          5_NIDDK_QA/0000027.xml | 5_NIDDK_QA/0000037.xml | 5_NIDDK_QA/0000070.xml | 5_NIDDK_QA/0000071.xml
+           2        How to diagnose Glomerular Diseases ? Patients with glomerular disease have significant amounts of protein in the urine, which may be referred to as "nephrotic range" if levels are very high. Red blood cells in the urine are a frequent finding as well, particularly in some forms of glomerular disease. Urinalysis provides information abo   NIDDK         5_NIDDK_QA                                                                            5_NIDDK_QA/0000144.xml | 5_NIDDK_QA/0000144.xml
+           2 How to diagnose Kidney Disease of Diabetes ? People with diabetes should be screened regularly for kidney disease. The two key markers for kidney disease are eGFR and urine albumin. - eGFR. eGFR stands for estimated glomerular filtration rate. Each kidney contains about 1 million tiny filters made up of blood vessels. These filters are called    NIDDK         5_NIDDK_QA                                                                            5_NIDDK_QA/0000153.xml | 5_NIDDK_QA/0000153.xml
+           2     How to diagnose Renal Tubular Acidosis ? To diagnose RTA, doctors check the acid-base balance in blood and urine samples. If the blood is more acidic than it should be and the urine less acidic than it should be, RTA may be the reason, but additional information is needed to rule out other causes. If RTA is the reason, additional informati   NIDDK         5_NIDDK_QA                                                                            5_NIDDK_QA/0000171.xml | 5_NIDDK_QA/0000171.xml
+           2  How to prevent Kidney Disease of Diabetes ? Blood Pressure Medicines Scientists have made great progress in developing methods that slow the onset and progression of kidney disease in people with diabetes. Drugs used to lower blood pressure can slow the progression of kidney disease significantly. Two types of drugs, angiotensin-converting en   NIDDK         5_NIDDK_QA                                                                            5_NIDDK_QA/0000153.xml | 5_NIDDK_QA/0000153.xml

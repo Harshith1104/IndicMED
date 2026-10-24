@@ -1,0 +1,10 @@
+IndicTrans2 six-direction smoke test
+====================================
+hi->en | मधुमेह के लक्षण क्या हैं? | What are the symptoms of diabetes?
+te->en | డయాబెటిస్ లక్షణాలు ఏమిటి? | What are the symptoms of diabetes?
+ta->en | நீரிழிவு நோயின் அறிகுறிகள் என்ன? | What are the symptoms of diabetes?
+en->hi | What are the symptoms of diabetes? | मधुमेह के लक्षण क्या हैं?
+en->te | What are the symptoms of diabetes? | మధుమేహం యొక్క లక్షణాలు ఏమిటి?
+en->ta | What are the symptoms of diabetes? | நீரிழிவு நோயின் அறிகுறிகள் என்ன?
+Model load counts: {'to_en': 1, 'from_en': 1}
+Loaded devices: {'from_en': 'cuda'}
