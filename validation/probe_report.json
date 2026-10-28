@@ -1,0 +1,46 @@
+[
+    {
+        "query":  "When I get out of bed, everything around me spins.",
+        "status":  "insufficient_evidence",
+        "has_answer":  false,
+        "validation":  {
+                           "intent":  {
+                                          "decision":  "medical",
+                                          "reason":  "contrastive_health_intent",
+                                          "medical_anchor_similarity":  0.6879423260688782,
+                                          "other_anchor_similarity":  0.08296827226877213,
+                                          "intent_margin":  0.604974053800106
+                                      },
+                           "relevance":  {
+                                             "question_similarity":  0.1269208937883377,
+                                             "topic_coverage":  0.16666666666666666,
+                                             "matched_topics":  [
+                                                                    "around"
+                                                                ],
+                                             "missing_facets":  [
+
+                                                                ],
+                                             "requested_facets":  [
+
+                                                                  ]
+                                         },
+                           "route":  "semantic:english:en"
+                       },
+        "reason":  "weak_retrieval_evidence"
+    },
+    {
+        "query":  "Explain how to fold an origami crane.",
+        "status":  "clarification_needed",
+        "has_answer":  false,
+        "validation":  {
+                           "intent":  {
+                                          "decision":  "clarification_needed",
+                                          "reason":  "ambiguous_question",
+                                          "medical_anchor_similarity":  0.16195397078990936,
+                                          "other_anchor_similarity":  0.21907827258110046,
+                                          "intent_margin":  -0.0571243017911911
+                                      }
+                       },
+        "reason":  "ambiguous_question"
+    }
+]

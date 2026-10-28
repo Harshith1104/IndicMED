@@ -57,7 +57,8 @@ class IndicMedPipeline:
         return retriever
 
     def ask(self, query: str, language: str | None = None, retrieval_method: str | None = None,
-            top_k: int | None = None, multilingual_strategy: str | None = None) -> dict[str, Any]:
+            top_k: int | None = None, multilingual_strategy: str | None = None,
+            *, retrieval_guard: Any | None = None) -> dict[str, Any]:
         normalized = normalize_text(query)
         if not normalized:
             raise ValueError("Question cannot be empty")
@@ -87,6 +88,10 @@ class IndicMedPipeline:
             normalized if retrieval_strategy == "direct_semantic" else english_query,
             top_k or self.config["retrieval"]["top_k"],
         )
+        # Optional application safety gate. Research callers retain the exact
+        # original ranking/selection behavior when this callback is absent.
+        if retrieval_guard is not None:
+            retrieval_guard(results, english_query, retrieval_strategy)
         selected = select_answer(results)
         if selected is None:
             raise LookupError("No relevant FAQ was found")

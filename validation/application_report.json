@@ -1,0 +1,1431 @@
+{
+  "summary": {
+    "examples": 78,
+    "passed": 78,
+    "false_domain_accepts": 0,
+    "false_domain_rejects": 0,
+    "medical_domain_abstentions": 0,
+    "medical_answers_withheld": 13,
+    "comparisons_passed": 4
+  },
+  "limitation": "Authored development examples, including inspected holdout cases; not general classifier accuracy or clinical answer validation.",
+  "cases": [
+    {
+      "split": "calibration",
+      "query": "What is asthma?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-7021d577d48b5e05",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What are the symptoms of diabetes?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-2cd2681e7368ea69",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Why do I feel dizzy?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "dizziness"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-fa731e418acc20a8",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What causes frequent headaches?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-fa155f9f97d8710f",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is AL amyloidosis?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "amyloidosis"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-4a169dfc76c6ef4a",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "How is tuberculosis diagnosed?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "tuberculosis"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-05359abe8d0fb2fb",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "How can malaria be prevented?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "malaria"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What is (are) Malaria ?"
+    },
+    {
+      "split": "calibration",
+      "query": "What causes migraine?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "migraine"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-8ba4249df8679026",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is Gaucher disease?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "gaucher"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-492f7de10b0e664c",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What are the symptoms of anemia?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "anemia"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-ee9141647b5aa82f",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What are the side effects of paracetamol?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "paracetamol"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What are the treatments for Colorectal Cancer ?"
+    },
+    {
+      "split": "calibration",
+      "query": "What is the treatment for experimental Zorvex-99 syndrome?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "zorvex-99"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What are the treatments for Weissenbacher-Zweymller syndrome ?"
+    },
+    {
+      "split": "calibration",
+      "query": "Who is Allu Arjun?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Who is Virat Kohli?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Who is the prime minister of India?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is React JS?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Who won the cricket match?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Tell me about the movie Pushpa.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What does AL mean in baseball standings?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Explain a JavaScript Promise.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Plan a holiday in Paris.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Recommend a laptop for college.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is AL?",
+      "language": "en",
+      "domain": "clarification_needed",
+      "observed_domain": "clarification_needed",
+      "status": "clarification_needed",
+      "passed": true,
+      "reason": "ambiguous_question",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Tell me about it.",
+      "language": "en",
+      "domain": "clarification_needed",
+      "observed_domain": "clarification_needed",
+      "status": "clarification_needed",
+      "passed": true,
+      "reason": "ambiguous_question",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "मधुमेह के लक्षण क्या हैं?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-2cd2681e7368ea69",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "మధుమేహం లక్షణాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-2cd2681e7368ea69",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "நீரிழிவு நோயின் அறிகுறிகள் என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-2cd2681e7368ea69",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "माइग्रेन के कारण क्या हैं?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "migraine"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-8ba4249df8679026",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "migraine"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-8ba4249df8679026",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "tuberculosis"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-05359abe8d0fb2fb",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "एल amyloidosis क्या है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "amyloidosis"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What is (are) Amyloidosis AA ?"
+    },
+    {
+      "split": "calibration",
+      "query": "పారాసిటమాల్ దుష్ప్రభావాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "paracetamol"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What are the treatments for Colorectal Cancer ?"
+    },
+    {
+      "split": "calibration",
+      "query": "சோதனை Zorvex-99 நோய்க்கான சிகிச்சை என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "zorvex-99"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What are the treatments for Herpes zoster oticus ?"
+    },
+    {
+      "split": "calibration",
+      "query": "अस्थमा (asthma) के लक्षण क्या हैं?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-30164eb6704f77cc",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "ఆస్తమా (asthma) లక్షణాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-30164eb6704f77cc",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "ஆஸ்துமா (asthma) அறிகுறிகள் என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-30164eb6704f77cc",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "प्रयोगात्मक Zorvex-99 रोग का उपचार क्या है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "zorvex-99"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What are the treatments for Herpes zoster oticus ?"
+    },
+    {
+      "split": "calibration",
+      "query": "ప్రయోగాత్మక Zorvex-99 వ్యాధికి చికిత్స ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "zorvex-99"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What are the treatments for Herpes zoster oticus ?"
+    },
+    {
+      "split": "calibration",
+      "query": "கிரிக்கெட் போட்டியில் வென்ற அணி எது?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "कल का क्रिकेट मैच किसने जीता?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "క్రికెట్ మ్యాచ్ ఎవరు గెలిచారు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "React JS क्या है?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "React JS అంటే ఏమిటి?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "React JS என்றால் என்ன?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is ALS?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "amyotrophic"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-0975f80602b5bc94",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is COPD?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "copd"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-503372d28895d9f8",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "What is HIV?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "hiv"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-607385a3972f89d4",
+      "candidate_question": null
+    },
+    {
+      "split": "calibration",
+      "query": "Explain the ALS algorithm for movie recommendations.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "Why does my stomach hurt?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "stomach"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What to do for Gastritis ?"
+    },
+    {
+      "split": "holdout",
+      "query": "How is cystic fibrosis inherited?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "cystic",
+        "fibrosis"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-4dca3f9f4054916c",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "What are the symptoms of Wilson disease?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "wilson"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-6d43121f2506fba0",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "What disease did this person have?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "unspecified-person"
+      ],
+      "expected_status": "insufficient_evidence",
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "How many people are affected by Erdheim-Chester disease ?"
+    },
+    {
+      "split": "holdout",
+      "query": "What is Marfan syndrome?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "marfan"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-6e81a80471f7b89f",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "How is pneumonia treated?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "pneumonia"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-2f8dbfe995529e55",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "Who is Taylor Swift?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "Explain Python decorators.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "How do I change a bicycle tyre?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "What is the score of the football game?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "What does TB mean on a hard drive?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "Is it serious?",
+      "language": "en",
+      "domain": "clarification_needed",
+      "observed_domain": "clarification_needed",
+      "status": "clarification_needed",
+      "passed": true,
+      "reason": "ambiguous_question",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "अल्लू अर्जुन कौन हैं?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "विराट कोहली कौन हैं?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "पुष्पा फिल्म के बारे में बताओ।",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "भारत के प्रधानमंत्री कौन हैं?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "అల్లు అర్జున్ ఎవరు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "విరాట్ కోహ్లీ ఎవరు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "పుష్ప సినిమా గురించి చెప్పండి.",
+      "language": "te",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "భారత ప్రధానమంత్రి ఎవరు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "அல்லு அர்ஜுன் யார்?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "விராட் கோலி யார்?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "இந்திய பிரதமர் யார்?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "observed_domain": "out_of_scope",
+      "status": "out_of_scope",
+      "passed": true,
+      "reason": "non_medical_context",
+      "document_id": null,
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "अस्थमा क्या है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-7021d577d48b5e05",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "मुझे बार-बार सिरदर्द क्यों होता है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What is (are) Headache ?"
+    },
+    {
+      "split": "holdout",
+      "query": "ఆస్తమా అంటే ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-7021d577d48b5e05",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "నాకు తరచుగా తలనొప్పి ఎందుకు వస్తుంది?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What is (are) Headache ?"
+    },
+    {
+      "split": "holdout",
+      "query": "ஆஸ்துமா என்றால் என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "observed_domain": "medical",
+      "status": "success",
+      "passed": true,
+      "reason": null,
+      "document_id": "medquad-7021d577d48b5e05",
+      "candidate_question": null
+    },
+    {
+      "split": "holdout",
+      "query": "எனக்கு ஏன் அடிக்கடி தலைவலி வருகிறது?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "observed_domain": "medical",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "reason": "weak_retrieval_evidence",
+      "document_id": null,
+      "candidate_question": "What is (are) Headache ?"
+    }
+  ],
+  "comparisons": [
+    {
+      "language": "en",
+      "passed": true,
+      "response": {
+        "query": "What is asthma?",
+        "selected_language": "en",
+        "retrieval_method": "semantic",
+        "top_k": 3,
+        "equivalent": true,
+        "explanation": "English uses the same query in both paths. One inference was reused.",
+        "direct": {
+          "query": "What is asthma?",
+          "detected_language": "en",
+          "selected_language": "en",
+          "retrieval_strategy": "semantic",
+          "english_query": "What is asthma?",
+          "answer": "Asthma is a breathing disorder characterized by inflammation of the airways and recurrent episodes of breathing difficulty. These episodes, sometimes referred to as asthma attacks, are triggered by irritation of the inflamed airways. In allergic asthma, the attacks occur when substances known as allergens are inhaled, causing an allergic reaction. Allergens are harmless substances that the body's immune system mistakenly reacts to as though they are harmful. Common allergens include pollen, dust, animal dander, and mold. The immune response leads to the symptoms of asthma. Allergic asthma is the most common form of the disorder. A hallmark of asthma is bronchial hyperresponsiveness, which means the airways are especially sensitive to irritants and respond excessively. Because of this hyperresponsiveness, attacks can be triggered by irritants other than allergens, such as physical activity, respiratory infections, or exposure to tobacco smoke, in people with allergic asthma. An asthma attack is characterized by tightening of the muscles around the airways (bronchoconstriction), which narrows the airway and makes breathing difficult. Additionally, the immune reaction can lead to swelling of the airways and overproduction of mucus. During an attack, an affected individual can experience chest tightness, wheezing, shortness of breath, and coughing.",
+          "translated_answer": "Asthma is a breathing disorder characterized by inflammation of the airways and recurrent episodes of breathing difficulty. These episodes, sometimes referred to as asthma attacks, are triggered by irritation of the inflamed airways. In allergic asthma, the attacks occur when substances known as allergens are inhaled, causing an allergic reaction. Allergens are harmless substances that the body's immune system mistakenly reacts to as though they are harmful. Common allergens include pollen, dust, animal dander, and mold. The immune response leads to the symptoms of asthma. Allergic asthma is the most common form of the disorder. A hallmark of asthma is bronchial hyperresponsiveness, which means the airways are especially sensitive to irritants and respond excessively. Because of this hyperresponsiveness, attacks can be triggered by irritants other than allergens, such as physical activity, respiratory infections, or exposure to tobacco smoke, in people with allergic asthma. An asthma attack is characterized by tightening of the muscles around the airways (bronchoconstriction), which narrows the airway and makes breathing difficult. Additionally, the immune reaction can lead to swelling of the airways and overproduction of mucus. During an attack, an affected individual can experience chest tightness, wheezing, shortness of breath, and coughing.",
+          "category": "3_GHR_QA",
+          "source": "GHR",
+          "source_url": "https://ghr.nlm.nih.gov/condition/allergic-asthma",
+          "similarity_score": 0.8389370441436768,
+          "related_questions": [
+            "What is (are) Asthma ?",
+            "What is (are) Asthma ?"
+          ],
+          "document_id": "medquad-7021d577d48b5e05",
+          "translation_warning": null,
+          "status": "success",
+          "retrieved_question": "What is (are) allergic asthma ?",
+          "retrieval_query": "What is asthma?",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "explicit_health_intent"
+            },
+            "relevance": {
+              "question_similarity": 0.8705339431762695,
+              "topic_coverage": 1.0,
+              "matched_topics": [
+                "asthma"
+              ],
+              "missing_facets": [],
+              "requested_facets": []
+            },
+            "route": "semantic:english:en"
+          }
+        },
+        "translate": {
+          "query": "What is asthma?",
+          "detected_language": "en",
+          "selected_language": "en",
+          "retrieval_strategy": "semantic",
+          "english_query": "What is asthma?",
+          "answer": "Asthma is a breathing disorder characterized by inflammation of the airways and recurrent episodes of breathing difficulty. These episodes, sometimes referred to as asthma attacks, are triggered by irritation of the inflamed airways. In allergic asthma, the attacks occur when substances known as allergens are inhaled, causing an allergic reaction. Allergens are harmless substances that the body's immune system mistakenly reacts to as though they are harmful. Common allergens include pollen, dust, animal dander, and mold. The immune response leads to the symptoms of asthma. Allergic asthma is the most common form of the disorder. A hallmark of asthma is bronchial hyperresponsiveness, which means the airways are especially sensitive to irritants and respond excessively. Because of this hyperresponsiveness, attacks can be triggered by irritants other than allergens, such as physical activity, respiratory infections, or exposure to tobacco smoke, in people with allergic asthma. An asthma attack is characterized by tightening of the muscles around the airways (bronchoconstriction), which narrows the airway and makes breathing difficult. Additionally, the immune reaction can lead to swelling of the airways and overproduction of mucus. During an attack, an affected individual can experience chest tightness, wheezing, shortness of breath, and coughing.",
+          "translated_answer": "Asthma is a breathing disorder characterized by inflammation of the airways and recurrent episodes of breathing difficulty. These episodes, sometimes referred to as asthma attacks, are triggered by irritation of the inflamed airways. In allergic asthma, the attacks occur when substances known as allergens are inhaled, causing an allergic reaction. Allergens are harmless substances that the body's immune system mistakenly reacts to as though they are harmful. Common allergens include pollen, dust, animal dander, and mold. The immune response leads to the symptoms of asthma. Allergic asthma is the most common form of the disorder. A hallmark of asthma is bronchial hyperresponsiveness, which means the airways are especially sensitive to irritants and respond excessively. Because of this hyperresponsiveness, attacks can be triggered by irritants other than allergens, such as physical activity, respiratory infections, or exposure to tobacco smoke, in people with allergic asthma. An asthma attack is characterized by tightening of the muscles around the airways (bronchoconstriction), which narrows the airway and makes breathing difficult. Additionally, the immune reaction can lead to swelling of the airways and overproduction of mucus. During an attack, an affected individual can experience chest tightness, wheezing, shortness of breath, and coughing.",
+          "category": "3_GHR_QA",
+          "source": "GHR",
+          "source_url": "https://ghr.nlm.nih.gov/condition/allergic-asthma",
+          "similarity_score": 0.8389370441436768,
+          "related_questions": [
+            "What is (are) Asthma ?",
+            "What is (are) Asthma ?"
+          ],
+          "document_id": "medquad-7021d577d48b5e05",
+          "translation_warning": null,
+          "status": "success",
+          "retrieved_question": "What is (are) allergic asthma ?",
+          "retrieval_query": "What is asthma?",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "explicit_health_intent"
+            },
+            "relevance": {
+              "question_similarity": 0.8705339431762695,
+              "topic_coverage": 1.0,
+              "matched_topics": [
+                "asthma"
+              ],
+              "missing_facets": [],
+              "requested_facets": []
+            },
+            "route": "semantic:english:en"
+          }
+        }
+      }
+    },
+    {
+      "language": "hi",
+      "passed": true,
+      "response": {
+        "query": "मधुमेह के लक्षण क्या हैं?",
+        "selected_language": "hi",
+        "retrieval_method": "semantic",
+        "top_k": 3,
+        "equivalent": false,
+        "explanation": "Different query representations can produce incomparable scores. No live-query winner is inferred.",
+        "direct": {
+          "query": "मधुमेह के लक्षण क्या हैं?",
+          "detected_language": "hi",
+          "selected_language": "hi",
+          "retrieval_strategy": "direct_semantic",
+          "english_query": "मधुमेह के लक्षण क्या हैं?",
+          "answer": "The signs and symptoms of diabetes are - being very thirsty - urinating often - feeling very hungry - feeling very tired - losing weight without trying - sores that heal slowly - dry, itchy skin - feelings of pins and needles in your feet - losing feeling in your feet - blurry eyesight Some people with diabetes dont have any of these signs or symptoms. The only way to know if you have diabetes is to have your doctor do a blood test.",
+          "translated_answer": "मधुमेह के संकेत और लक्षण हैं-बहुत प्यास लगना-अक्सर पेशाब करना-बहुत भूख लगना-बहुत थका हुआ महसूस करना-बिना कोशिश किए वजन कम करना-घाव जो धीरे-धीरे ठीक हो जाते हैं-सूखी, खुजली वाली त्वचा-आपके पैरों में पिन और सुइयों की भावना-आपके पैरों में भावना कम होना-धुंधली दृष्टि मधुमेह वाले कुछ लोगों में इनमें से कोई भी संकेत या लक्षण नहीं होते हैं। यह जानने का एकमात्र तरीका है कि आपको मधुमेह है या नहीं, अपने डॉक्टर से रक्त परीक्षण कराना है।",
+          "category": "5_NIDDK_QA",
+          "source": "NIDDK",
+          "source_url": "http://www.niddk.nih.gov/health-information/health-topics/Diabetes/your-guide-diabetes/Pages/index.aspx",
+          "similarity_score": 0.8404674530029297,
+          "related_questions": [
+            "What are the symptoms of Diabetes ?",
+            "What are the symptoms of Diabetes ?"
+          ],
+          "document_id": "medquad-2cd2681e7368ea69",
+          "translation_warning": null,
+          "status": "success",
+          "retrieved_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+          "retrieval_query": "मधुमेह के लक्षण क्या हैं?",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "explicit_health_intent"
+            },
+            "relevance": {
+              "question_similarity": 0.8510316610336304,
+              "topic_coverage": 1.0,
+              "matched_topics": [
+                "diabetes"
+              ],
+              "missing_facets": [],
+              "requested_facets": [
+                "symptoms"
+              ]
+            },
+            "route": "semantic:direct:hi"
+          }
+        },
+        "translate": {
+          "query": "मधुमेह के लक्षण क्या हैं?",
+          "detected_language": "hi",
+          "selected_language": "hi",
+          "retrieval_strategy": "translate_semantic",
+          "english_query": "What are the symptoms of diabetes?",
+          "answer": "The signs and symptoms of diabetes are - being very thirsty - urinating often - feeling very hungry - feeling very tired - losing weight without trying - sores that heal slowly - dry, itchy skin - feelings of pins and needles in your feet - losing feeling in your feet - blurry eyesight Some people with diabetes dont have any of these signs or symptoms. The only way to know if you have diabetes is to have your doctor do a blood test.",
+          "translated_answer": "मधुमेह के संकेत और लक्षण हैं-बहुत प्यास लगना-अक्सर पेशाब करना-बहुत भूख लगना-बहुत थका हुआ महसूस करना-बिना कोशिश किए वजन कम करना-घाव जो धीरे-धीरे ठीक हो जाते हैं-सूखी, खुजली वाली त्वचा-आपके पैरों में पिन और सुइयों की भावना-आपके पैरों में भावना कम होना-धुंधली दृष्टि मधुमेह वाले कुछ लोगों में इनमें से कोई भी संकेत या लक्षण नहीं होते हैं। यह जानने का एकमात्र तरीका है कि आपको मधुमेह है या नहीं, अपने डॉक्टर से रक्त परीक्षण कराना है।",
+          "category": "5_NIDDK_QA",
+          "source": "NIDDK",
+          "source_url": "http://www.niddk.nih.gov/health-information/health-topics/Diabetes/your-guide-diabetes/Pages/index.aspx",
+          "similarity_score": 0.8811297416687012,
+          "related_questions": [
+            "What are the symptoms of Diabetes ?",
+            "What are the symptoms of I Can Lower My Risk for Type 2 Diabetes: A Guide for American Indians ?"
+          ],
+          "document_id": "medquad-2cd2681e7368ea69",
+          "translation_warning": null,
+          "status": "success",
+          "retrieved_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+          "retrieval_query": "What are the symptoms of diabetes?",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "explicit_health_intent"
+            },
+            "relevance": {
+              "question_similarity": 0.8510316610336304,
+              "topic_coverage": 1.0,
+              "matched_topics": [
+                "diabetes"
+              ],
+              "missing_facets": [],
+              "requested_facets": [
+                "symptoms"
+              ]
+            },
+            "route": "semantic:translate:hi"
+          }
+        }
+      }
+    },
+    {
+      "language": "te",
+      "passed": true,
+      "response": {
+        "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+        "selected_language": "te",
+        "retrieval_method": "semantic",
+        "top_k": 3,
+        "equivalent": false,
+        "explanation": "Different query representations can produce incomparable scores. No live-query winner is inferred.",
+        "direct": {
+          "status": "insufficient_evidence",
+          "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+          "selected_language": "te",
+          "detected_language": "te",
+          "reason": "weak_retrieval_evidence",
+          "message": "We couldn't find sufficiently relevant medical information.",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "contrastive_health_intent",
+              "medical_anchor_similarity": 0.834857702255249,
+              "other_anchor_similarity": 0.1104569211602211,
+              "intent_margin": 0.7244007810950279
+            },
+            "relevance": {
+              "question_similarity": 0.1741250604391098,
+              "topic_coverage": 0.0,
+              "matched_topics": [],
+              "missing_facets": [],
+              "requested_facets": [
+                "causes"
+              ]
+            },
+            "route": "semantic:direct:te"
+          },
+          "candidate": {
+            "id": "medquad-08e84c07b2e1b797",
+            "question": "What is (are) Renal Tubular Acidosis ?",
+            "source": "NIDDK",
+            "source_url": "http://www.niddk.nih.gov/health-information/health-topics/kidney-disease/renal-tubular-acidosis-rta/Pages/facts.aspx",
+            "similarity_score": 0.3365907669067383,
+            "retrieval_query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?"
+          }
+        },
+        "translate": {
+          "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+          "detected_language": "te",
+          "selected_language": "te",
+          "retrieval_strategy": "translate_semantic",
+          "english_query": "What are the causes of migraines?",
+          "answer": "The pain of a migraine headache is often described as an intense pulsing or throbbing pain in one area of the head. However, it is much more; the International Headache Society diagnoses a migraine by its pain and number of attacks (at least 5, lasting 4-72 hours if untreated), and additional symptoms including nausea and/or vomiting, or sensitivity to both light and sound. Migraine is three times more common in women than in men and affects more than 10 percent of people worldwide. Roughly one-third of affected individuals can predict the onset of a migraine because it is preceded by an \"aura,\" visual disturbances that appear as flashing lights, zig-zag lines or a temporary loss of vision. People with migraine tend to have recurring attacks triggered by a number of different factors, including stress, anxiety, hormonal changes, bright or flashing lights, lack of food or sleep, and dietary substances. Migraine in some women may relate to changes in hormones and hormonal levels during their menstrual cycle. For many years, scientists believed that migraines were linked to the dilation and constriction of blood vessels in the head. Investigators now believe that migraine has a genetic cause.",
+          "translated_answer": "మైగ్రేన్ తలనొప్పి యొక్క నొప్పిని తరచుగా తల యొక్క ఒక ప్రాంతంలో తీవ్రమైన పల్స్ లేదా థ్రబ్బింగ్ నొప్పిగా వర్ణిస్తారు. అయితే, ఇది చాలా ఎక్కువ; ఇంటర్నేషనల్ హెడ్ఏక్ సొసైటీ మైగ్రేన్ను దాని నొప్పి మరియు దాడుల సంఖ్య (కనీసం 5, చికిత్స చేయకపోతే కనీసం 5 గంటలు), మరియు వికారం మరియు/లేదా వాంతులు, లేదా కాంతి మరియు శబ్దం రెండింటికీ సున్నితత్వం వంటి అదనపు లక్షణాల ద్వారా నిర్ధారిస్తుంది. మైగ్రేన్ అనేది పురుషుల కంటే మహిళల్లో మూడు రెట్లు ఎక్కువ సాధారణం మరియు ప్రపంచవ్యాప్తంగా 10 శాతం కంటే ఎక్కువ మందిని ప్రభావితం చేస్తుంది. దాదాపు మూడింట ఒక వంతు మంది బాధిత వ్యక్తులు మైగ్రేన్ ప్రారంభాన్ని అంచనా వేయవచ్చు ఎందుకంటే దీనికి ముందు \"ఆరా\", మెరిసే లైట్లు, జిగ్-జాగ్ లైన్లు లేదా తాత్కాలిక దృష్టి నష్టం వంటి దృశ్య ఆటంకాలు కనిపిస్తాయి. మైగ్రేన్ ఉన్న వ్యక్తులు అనేక కారణాల వల్ల పునరావృతమయ్యే దాడులను కలిగి ఉంటారు, ఒత్తిడి, ఒత్తిడి, ఆందోళన, మరియు అనేక హార్మోన్ల యొక్క ప్రకాశవంతమైన మార్పులతో సహా.",
+          "category": "6_NINDS_QA",
+          "source": "NINDS",
+          "source_url": "http://www.ninds.nih.gov/disorders/migraine/migraine.htm",
+          "similarity_score": 0.788756787776947,
+          "related_questions": [
+            "What is (are) sporadic hemiplegic migraine ?",
+            "What is (are) Migraine ?"
+          ],
+          "document_id": "medquad-8ba4249df8679026",
+          "translation_warning": null,
+          "status": "success",
+          "retrieved_question": "What is (are) Migraine ?",
+          "retrieval_query": "What are the causes of migraines?",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "contrastive_health_intent",
+              "medical_anchor_similarity": 0.834857702255249,
+              "other_anchor_similarity": 0.1104569211602211,
+              "intent_margin": 0.7244007810950279
+            },
+            "relevance": {
+              "question_similarity": 0.8268102407455444,
+              "topic_coverage": 1.0,
+              "matched_topics": [
+                "migraine"
+              ],
+              "missing_facets": [],
+              "requested_facets": [
+                "causes"
+              ]
+            },
+            "route": "semantic:translate:te"
+          }
+        }
+      }
+    },
+    {
+      "language": "ta",
+      "passed": true,
+      "response": {
+        "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+        "selected_language": "ta",
+        "retrieval_method": "semantic",
+        "top_k": 3,
+        "equivalent": false,
+        "explanation": "Different query representations can produce incomparable scores. No live-query winner is inferred.",
+        "direct": {
+          "status": "insufficient_evidence",
+          "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+          "selected_language": "ta",
+          "detected_language": "ta",
+          "reason": "weak_retrieval_evidence",
+          "message": "We couldn't find sufficiently relevant medical information.",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "explicit_health_intent"
+            },
+            "relevance": {
+              "question_similarity": 0.4445926249027252,
+              "topic_coverage": 0.0,
+              "matched_topics": [],
+              "missing_facets": [],
+              "requested_facets": [
+                "diagnosis"
+              ]
+            },
+            "route": "semantic:direct:ta"
+          },
+          "candidate": {
+            "id": "medquad-e040574faf1620f1",
+            "question": "How to diagnose Alkhurma Hemorrhagic Fever (AHF) ?",
+            "source": "CDC",
+            "source_url": "http://www.cdc.gov/vhf/alkhurma/",
+            "similarity_score": 0.6056780219078064,
+            "retrieval_query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?"
+          }
+        },
+        "translate": {
+          "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+          "detected_language": "ta",
+          "selected_language": "ta",
+          "retrieval_strategy": "translate_semantic",
+          "english_query": "How is tuberculosis diagnosed?",
+          "answer": "Tuberculosis (TB) is a disease caused by bacteria called Mycobacterium tuberculosis. The bacteria usually attack the lungs, but they can also damage other parts of the body. TB spreads through the air when a person with TB of the lungs or throat coughs, sneezes, or talks. If you have been exposed, you should go to your doctor for tests. You are more likely to get TB if you have a weak immune system. Symptoms of TB in the lungs may include - A bad cough that lasts 3 weeks or longer - Weight loss - Loss of appetite - Coughing up blood or mucus - Weakness or fatigue - Fever - Night sweats Skin tests, blood tests, x-rays, and other tests can tell if you have TB. If not treated properly, TB can be deadly. You can usually cure active TB by taking several medicines for a long period of time. NIH: National Institute of Allergy and Infectious Diseases",
+          "translated_answer": "காசநோய் (டிபி) என்பது மைக்கோபாக்டீரியம் காசநோய் எனப்படும் பாக்டீரியாவால் ஏற்படும் ஒரு நோயாகும். பாக்டீரியாக்கள் பொதுவாக நுரையீரலைத் தாக்குகின்றன, ஆனால் அவை உடலின் பிற பகுதிகளையும் சேதப்படுத்தலாம். நுரையீரலின் காசநோய் அல்லது தொண்டை காசநோய் உள்ள ஒருவர் இருமல், தும்மல் அல்லது பேசும்போது காசநோய் காற்று வழியாக பரவுகிறது. நீங்கள் வெளிப்பட்டிருந்தால், நீங்கள் உங்கள் மருத்துவரிடம் சோதனைகளுக்காக செல்ல வேண்டும். உங்களுக்கு பலவீனமான நோயெதிர்ப்பு அமைப்பு இருந்தால் காசநோய் வர அதிக வாய்ப்பு உள்ளது. நுரையீரலில் காசநோயின் அறிகுறிகளில்-3 வாரங்கள் அல்லது அதற்கு மேல் நீடிக்கும் ஒரு கெட்ட இருமல்-எடை இழப்பு-பசி இழப்பு-இரத்தம் அல்லது சளி-பலவீனம் அல்லது சோர்வு-காய்ச்சல்-இரவு வியர்வை தோல் சோதனைகள், இரத்தப் பரிசோதனைகள், எக்ஸ்-ரே மற்றும் பிற சோதனைகள் உங்களுக்கு காசநோய் இருக்கிறதா என்பதைக் கூறலாம். சரியாக சிகிச்சையளிக்கப்படாவிட்டால், காசநோய் ஆபத்தானது. பொதுவாக நீண்ட காலத்திற்கு பல நோய்களைக் குணப்படுத்தலாம்.",
+          "category": "4_MPlus_Health_Topics_QA",
+          "source": "MPlusHealthTopics",
+          "source_url": "https://www.nlm.nih.gov/medlineplus/tuberculosis.html",
+          "similarity_score": 0.7578004598617554,
+          "related_questions": [
+            "How to diagnose Tuberculosis (TB) ?",
+            "What are the treatments for Tuberculosis (TB) ?"
+          ],
+          "document_id": "medquad-05359abe8d0fb2fb",
+          "translation_warning": null,
+          "status": "success",
+          "retrieved_question": "What is (are) Tuberculosis ?",
+          "retrieval_query": "How is tuberculosis diagnosed?",
+          "validation": {
+            "intent": {
+              "decision": "medical",
+              "reason": "explicit_health_intent"
+            },
+            "relevance": {
+              "question_similarity": 0.8075435757637024,
+              "topic_coverage": 1.0,
+              "matched_topics": [
+                "tuberculosis"
+              ],
+              "missing_facets": [],
+              "requested_facets": [
+                "diagnosis"
+              ]
+            },
+            "route": "semantic:translate:ta"
+          }
+        }
+      }
+    }
+  ]
+}

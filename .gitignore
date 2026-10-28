@@ -22,3 +22,23 @@ indexes/*.faiss
 outputs/results/*.csv
 outputs/figures/*.png
 *.log
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/test-results/
+frontend/playwright-report/
+frontend/.env*
+!frontend/.env.example
+
+# Windows Python virtual environment
+.venv-win/
+
+# Additional environment secrets
+.env.*
+!.env.example
+
+# Large ML model files
+*.safetensors
+*.pt
+*.pth
+*.ckpt

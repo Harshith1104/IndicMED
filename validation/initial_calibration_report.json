@@ -1,0 +1,4372 @@
+{
+  "limitations": "Small authored examples; topic labels do not establish clinical accuracy or full answerability. No original retrieval benchmark was rerun.",
+  "domain": {
+    "calibration": {
+      "count": 33,
+      "false_accepts": 0,
+      "false_rejects": 0,
+      "medical_abstentions": 0,
+      "domain_mismatches": [
+        {
+          "query": "What does AL mean in baseball standings?",
+          "domain": "out_of_scope",
+          "observed_domain": "clarification_needed"
+        }
+      ]
+    },
+    "holdout": {
+      "count": 30,
+      "false_accepts": 1,
+      "false_rejects": 0,
+      "medical_abstentions": 0,
+      "domain_mismatches": [
+        {
+          "query": "Explain Python decorators.",
+          "domain": "out_of_scope",
+          "observed_domain": "clarification_needed"
+        },
+        {
+          "query": "How do I change a bicycle tyre?",
+          "domain": "out_of_scope",
+          "observed_domain": "clarification_needed"
+        },
+        {
+          "query": "What does TB mean on a hard drive?",
+          "domain": "out_of_scope",
+          "observed_domain": "medical"
+        }
+      ]
+    }
+  },
+  "domain_examples": [
+    {
+      "split": "calibration",
+      "query": "What is asthma?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "english_query": "What is asthma?",
+      "margin": 0.19079656898975372,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What are the symptoms of diabetes?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "english_query": "What are the symptoms of diabetes?",
+      "margin": 0.4258658438920975,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "Why do I feel dizzy?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "dizziness"
+      ],
+      "english_query": "Why do I feel dizzy?",
+      "margin": 0.7906059920787811,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What causes frequent headaches?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "english_query": "What causes frequent headaches?",
+      "margin": 0.8971478529274464,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What is AL amyloidosis?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "amyloidosis"
+      ],
+      "english_query": "What is AL amyloidosis?",
+      "margin": 0.361834317445755,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "How is tuberculosis diagnosed?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "tuberculosis"
+      ],
+      "english_query": "How is tuberculosis diagnosed?",
+      "margin": 0.45255614817142487,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "How can malaria be prevented?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "malaria"
+      ],
+      "english_query": "How can malaria be prevented?",
+      "margin": 0.4019743874669075,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What causes migraine?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "migraine"
+      ],
+      "english_query": "What causes migraine?",
+      "margin": 0.7165997996926308,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What is Gaucher disease?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "gaucher"
+      ],
+      "english_query": "What is Gaucher disease?",
+      "margin": 0.5203288272023201,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What are the symptoms of anemia?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "anemia"
+      ],
+      "english_query": "What are the symptoms of anemia?",
+      "margin": 0.4516267478466034,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What are the side effects of paracetamol?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "paracetamol"
+      ],
+      "english_query": "What are the side effects of paracetamol?",
+      "margin": 0.6018770411610603,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "What is the treatment for experimental Zorvex-99 syndrome?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "zorvex-99"
+      ],
+      "english_query": "What is the treatment for experimental Zorvex-99 syndrome?",
+      "margin": 0.37981171905994415,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "Who is Allu Arjun?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Who is Allu Arjun?",
+      "margin": -0.2649674713611603,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "Who is Virat Kohli?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Who is Virat Kohli?",
+      "margin": -0.45753732696175575,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "Who is the prime minister of India?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Who is the prime minister of India?",
+      "margin": -0.3672259747982025,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "What is React JS?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "What is React JS?",
+      "margin": -0.2688947468996048,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "Who won the cricket match?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Who won the cricket match?",
+      "margin": -0.5896984487771988,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "Tell me about the movie Pushpa.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Tell me about the movie Pushpa.",
+      "margin": -0.417727991938591,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "What does AL mean in baseball standings?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "What does AL mean in baseball standings?",
+      "margin": 0.0443727970123291,
+      "observed_domain": "clarification_needed"
+    },
+    {
+      "split": "calibration",
+      "query": "Explain a JavaScript Promise.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Explain a JavaScript Promise.",
+      "margin": -0.4111593961715698,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "Plan a holiday in Paris.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Plan a holiday in Paris.",
+      "margin": -0.2613793686032295,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "Recommend a laptop for college.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Recommend a laptop for college.",
+      "margin": -0.2907665967941284,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "calibration",
+      "query": "What is AL?",
+      "language": "en",
+      "domain": "clarification_needed",
+      "english_query": "What is AL?",
+      "margin": -0.008158460259437561,
+      "observed_domain": "clarification_needed"
+    },
+    {
+      "split": "calibration",
+      "query": "Tell me about it.",
+      "language": "en",
+      "domain": "clarification_needed",
+      "english_query": "Tell me about it.",
+      "margin": -0.14664673805236816,
+      "observed_domain": "clarification_needed"
+    },
+    {
+      "split": "calibration",
+      "query": "मधुमेह के लक्षण क्या हैं?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "english_query": "What are the symptoms of diabetes?",
+      "margin": 0.4258658438920975,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "మధుమేహం లక్షణాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "english_query": "What are the symptoms of diabetes?",
+      "margin": 0.4258658438920975,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "நீரிழிவு நோயின் அறிகுறிகள் என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "diabetes"
+      ],
+      "english_query": "What are the symptoms of diabetes?",
+      "margin": 0.4258658438920975,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "माइग्रेन के कारण क्या हैं?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "migraine"
+      ],
+      "english_query": "What are the causes of migraines?",
+      "margin": 0.7244007885456085,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "migraine"
+      ],
+      "english_query": "What are the causes of migraines?",
+      "margin": 0.7244007885456085,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "tuberculosis"
+      ],
+      "english_query": "How is tuberculosis diagnosed?",
+      "margin": 0.45255614817142487,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "एल amyloidosis क्या है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "amyloidosis"
+      ],
+      "english_query": "What is L-amyloidosis?",
+      "margin": 0.47539400309324265,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "పారాసిటమాల్ దుష్ప్రభావాలు ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "paracetamol"
+      ],
+      "english_query": "What are the side effects of paracetamol?",
+      "margin": 0.6018770411610603,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "calibration",
+      "query": "சோதனை Zorvex-99 நோய்க்கான சிகிச்சை என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "zorvex-99"
+      ],
+      "english_query": "What is the treatment of experimental Zorvex-99 disease?",
+      "margin": 0.3596070036292076,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "Why does my stomach hurt?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "stomach"
+      ],
+      "english_query": "Why does my stomach hurt?",
+      "margin": 0.6437389701604843,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "How is cystic fibrosis inherited?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "cystic",
+        "fibrosis"
+      ],
+      "english_query": "How is cystic fibrosis inherited?",
+      "margin": 0.3864452689886093,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "What are the symptoms of Wilson disease?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "wilson"
+      ],
+      "english_query": "What are the symptoms of Wilson disease?",
+      "margin": 0.5500168949365616,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "What disease did this person have?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "unspecified-person"
+      ],
+      "expected_status": "insufficient_evidence",
+      "english_query": "What disease did this person have?",
+      "margin": 0.4500727355480194,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "What is Marfan syndrome?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "marfan"
+      ],
+      "english_query": "What is Marfan syndrome?",
+      "margin": 0.4001094847917557,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "How is pneumonia treated?",
+      "language": "en",
+      "domain": "medical",
+      "topics": [
+        "pneumonia"
+      ],
+      "english_query": "How is pneumonia treated?",
+      "margin": 0.40253306925296783,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "Who is Taylor Swift?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Who is Taylor Swift?",
+      "margin": -0.2611313909292221,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "Explain Python decorators.",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "Explain Python decorators.",
+      "margin": -0.21297304332256317,
+      "observed_domain": "clarification_needed"
+    },
+    {
+      "split": "holdout",
+      "query": "How do I change a bicycle tyre?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "How do I change a bicycle tyre?",
+      "margin": -0.2412470504641533,
+      "observed_domain": "clarification_needed"
+    },
+    {
+      "split": "holdout",
+      "query": "What is the score of the football game?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "What is the score of the football game?",
+      "margin": -0.20419743657112122,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "What does TB mean on a hard drive?",
+      "language": "en",
+      "domain": "out_of_scope",
+      "english_query": "What does TB mean on a hard drive?",
+      "margin": 0.270902656018734,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "Is it serious?",
+      "language": "en",
+      "domain": "clarification_needed",
+      "english_query": "Is it serious?",
+      "margin": 0.18439635634422302,
+      "observed_domain": "clarification_needed"
+    },
+    {
+      "split": "holdout",
+      "query": "अल्लू अर्जुन कौन हैं?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "english_query": "अल्लू अर्जुन कौन हैं?",
+      "margin": -0.34684526175260544,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "विराट कोहली कौन हैं?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "english_query": "विराट कोहली कौन हैं?",
+      "margin": -0.4064314216375351,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "पुष्पा फिल्म के बारे में बताओ।",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "english_query": "पुष्पा फिल्म के बारे में बताओ।",
+      "margin": -0.7605723291635513,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "भारत के प्रधानमंत्री कौन हैं?",
+      "language": "hi",
+      "domain": "out_of_scope",
+      "english_query": "भारत के प्रधानमंत्री कौन हैं?",
+      "margin": -0.3905189782381058,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "అల్లు అర్జున్ ఎవరు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "english_query": "అల్లు అర్జున్ ఎవరు?",
+      "margin": -0.44856374710798264,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "విరాట్ కోహ్లీ ఎవరు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "english_query": "విరాట్ కోహ్లీ ఎవరు?",
+      "margin": -0.4411246255040169,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "పుష్ప సినిమా గురించి చెప్పండి.",
+      "language": "te",
+      "domain": "out_of_scope",
+      "english_query": "పుష్ప సినిమా గురించి చెప్పండి.",
+      "margin": -0.17115285992622375,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "భారత ప్రధానమంత్రి ఎవరు?",
+      "language": "te",
+      "domain": "out_of_scope",
+      "english_query": "భారత ప్రధానమంత్రి ఎవరు?",
+      "margin": -0.42783959209918976,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "அல்லு அர்ஜுன் யார்?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "english_query": "அல்லு அர்ஜுன் யார்?",
+      "margin": -0.4089951440691948,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "விராட் கோலி யார்?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "english_query": "விராட் கோலி யார்?",
+      "margin": -0.5762225314974785,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "english_query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+      "margin": -0.16415061056613922,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "இந்திய பிரதமர் யார்?",
+      "language": "ta",
+      "domain": "out_of_scope",
+      "english_query": "இந்திய பிரதமர் யார்?",
+      "margin": -0.48958880454301834,
+      "observed_domain": "out_of_scope"
+    },
+    {
+      "split": "holdout",
+      "query": "अस्थमा क्या है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "english_query": "What is asthma?",
+      "margin": 0.19079656898975372,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "मुझे बार-बार सिरदर्द क्यों होता है?",
+      "language": "hi",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "english_query": "Why do I have frequent headaches?",
+      "margin": 0.8669484816491604,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "ఆస్తమా అంటే ఏమిటి?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "english_query": "What is asthma?",
+      "margin": 0.19079656898975372,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "నాకు తరచుగా తలనొప్పి ఎందుకు వస్తుంది?",
+      "language": "te",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "english_query": "Why do I often get headaches?",
+      "margin": 0.8132160194218159,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "ஆஸ்துமா என்றால் என்ன?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "asthma"
+      ],
+      "english_query": "What is asthma?",
+      "margin": 0.19079656898975372,
+      "observed_domain": "medical"
+    },
+    {
+      "split": "holdout",
+      "query": "எனக்கு ஏன் அடிக்கடி தலைவலி வருகிறது?",
+      "language": "ta",
+      "domain": "medical",
+      "topics": [
+        "headache"
+      ],
+      "english_query": "Why do I often have a headache?",
+      "margin": 0.7864655405282974,
+      "observed_domain": "medical"
+    }
+  ],
+  "retrieval_routes": {
+    "semantic:english:en": [
+      {
+        "split": "calibration",
+        "query": "What is asthma?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-7021d577d48b5e05",
+        "faq_question": "What is (are) allergic asthma ?",
+        "raw_score": 0.8389370441436768,
+        "relevant_topic": true,
+        "question_similarity": 0.8705340027809143,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the symptoms of diabetes?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-2cd2681e7368ea69",
+        "faq_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+        "raw_score": 0.8811297416687012,
+        "relevant_topic": true,
+        "question_similarity": 0.8510316610336304,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "Why do I feel dizzy?",
+        "english_query": "Why do I feel dizzy?",
+        "document_id": "medquad-fa731e418acc20a8",
+        "faq_question": "What is (are) Dizziness and Vertigo ?",
+        "raw_score": 0.8321930170059204,
+        "relevant_topic": true,
+        "question_similarity": 0.6330066919326782,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "dizziness"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms",
+          "causes"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What causes frequent headaches?",
+        "english_query": "What causes frequent headaches?",
+        "document_id": "medquad-fa155f9f97d8710f",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.8211364150047302,
+        "relevant_topic": true,
+        "question_similarity": 0.8005542755126953,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What is AL amyloidosis?",
+        "english_query": "What is AL amyloidosis?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 0.8378111124038696,
+        "relevant_topic": true,
+        "question_similarity": 0.9537114500999451,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "amyloidosis"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "How is tuberculosis diagnosed?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-05359abe8d0fb2fb",
+        "faq_question": "What is (are) Tuberculosis ?",
+        "raw_score": 0.7578004598617554,
+        "relevant_topic": true,
+        "question_similarity": 0.8075435757637024,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "tuberculosis"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "How can malaria be prevented?",
+        "english_query": "How can malaria be prevented?",
+        "document_id": "medquad-15792ab36f889ee3",
+        "faq_question": "What is (are) Malaria ?",
+        "raw_score": 0.7469320297241211,
+        "relevant_topic": true,
+        "question_similarity": 0.739582896232605,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "malaria"
+        ],
+        "missing_facets": [
+          "prevention"
+        ],
+        "requested_facets": [
+          "prevention"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What causes migraine?",
+        "english_query": "What causes migraine?",
+        "document_id": "medquad-8ba4249df8679026",
+        "faq_question": "What is (are) Migraine ?",
+        "raw_score": 0.8053408265113831,
+        "relevant_topic": true,
+        "question_similarity": 0.8357935547828674,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What is Gaucher disease?",
+        "english_query": "What is Gaucher disease?",
+        "document_id": "medquad-492f7de10b0e664c",
+        "faq_question": "What is (are) Gaucher disease ?",
+        "raw_score": 0.8808579444885254,
+        "relevant_topic": true,
+        "question_similarity": 0.9632588624954224,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "gaucher"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the symptoms of anemia?",
+        "english_query": "What are the symptoms of anemia?",
+        "document_id": "medquad-ee9141647b5aa82f",
+        "faq_question": "What are the symptoms of Sideroblastic anemia ?",
+        "raw_score": 0.7753347158432007,
+        "relevant_topic": true,
+        "question_similarity": 0.8611646890640259,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "anemia"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the side effects of paracetamol?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-ce2e4fdffcc73581",
+        "faq_question": "What are the treatments for Colorectal Cancer ?",
+        "raw_score": 0.5650563836097717,
+        "relevant_topic": false,
+        "question_similarity": 0.20280076563358307,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is the treatment for experimental Zorvex-99 syndrome?",
+        "english_query": "What is the treatment for experimental Zorvex-99 syndrome?",
+        "document_id": "medquad-1fd1e710726a55d3",
+        "faq_question": "What are the treatments for Weissenbacher-Zweymller syndrome ?",
+        "raw_score": 0.55876225233078,
+        "relevant_topic": false,
+        "question_similarity": 0.7016724944114685,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "syndrome"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is Allu Arjun?",
+        "english_query": "Who is Allu Arjun?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 0.35312801599502563,
+        "relevant_topic": false,
+        "question_similarity": 0.364535391330719,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is Virat Kohli?",
+        "english_query": "Who is Virat Kohli?",
+        "document_id": "medquad-e9ba27ff10239c5f",
+        "faq_question": "What are the treatments for vitiligo ?",
+        "raw_score": 0.34226158261299133,
+        "relevant_topic": false,
+        "question_similarity": 0.3269912600517273,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is the prime minister of India?",
+        "english_query": "Who is the prime minister of India?",
+        "document_id": "medquad-b02a0a204ae3efe6",
+        "faq_question": "What is (are) Parasites - Lice - Head Lice ?",
+        "raw_score": 0.25951075553894043,
+        "relevant_topic": false,
+        "question_similarity": 0.1993744671344757,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is React JS?",
+        "english_query": "What is React JS?",
+        "document_id": "medquad-f50c0f4109ae12f4",
+        "faq_question": "What is (are) Stevens-Johnson syndrome/toxic epidermal necrolysis ?",
+        "raw_score": 0.4494418501853943,
+        "relevant_topic": false,
+        "question_similarity": 0.27484625577926636,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who won the cricket match?",
+        "english_query": "Who won the cricket match?",
+        "document_id": "medquad-673ce1f04d53c4c6",
+        "faq_question": "What is (are) West Nile Virus ?",
+        "raw_score": 0.20402085781097412,
+        "relevant_topic": false,
+        "question_similarity": 0.16584114730358124,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Tell me about the movie Pushpa.",
+        "english_query": "Tell me about the movie Pushpa.",
+        "document_id": "medquad-f17b1eb3e52f1ed9",
+        "faq_question": "What are the genetic changes related to intranuclear rod myopathy ?",
+        "raw_score": 0.3227607011795044,
+        "relevant_topic": false,
+        "question_similarity": 0.100949227809906,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What does AL mean in baseball standings?",
+        "english_query": "What does AL mean in baseball standings?",
+        "document_id": "medquad-c12ba6e459250ec3",
+        "faq_question": "What are the genetic changes related to hypophosphatasia ?",
+        "raw_score": 0.36420321464538574,
+        "relevant_topic": false,
+        "question_similarity": 0.16787515580654144,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Explain a JavaScript Promise.",
+        "english_query": "Explain a JavaScript Promise.",
+        "document_id": "medquad-815dcaf2c03ba66e",
+        "faq_question": "Do you have information about Hormones",
+        "raw_score": 0.2721128463745117,
+        "relevant_topic": false,
+        "question_similarity": 0.11573019623756409,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Plan a holiday in Paris.",
+        "english_query": "Plan a holiday in Paris.",
+        "document_id": "medquad-687fe67ded1683ee",
+        "faq_question": "What are the symptoms of Paris-Trousseau thrombocytopenia ?",
+        "raw_score": 0.3705846071243286,
+        "relevant_topic": false,
+        "question_similarity": 0.39856401085853577,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Recommend a laptop for college.",
+        "english_query": "Recommend a laptop for college.",
+        "document_id": "medquad-7863c94d69a4725c",
+        "faq_question": "What are the treatments for Neuroleptic Malignant Syndrome ?",
+        "raw_score": 0.27967894077301025,
+        "relevant_topic": false,
+        "question_similarity": 0.14910057187080383,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is AL?",
+        "english_query": "What is AL?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 0.432586669921875,
+        "relevant_topic": false,
+        "question_similarity": 0.5167067646980286,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Tell me about it.",
+        "english_query": "Tell me about it.",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.35302120447158813,
+        "relevant_topic": false,
+        "question_similarity": 0.09960531443357468,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Why does my stomach hurt?",
+        "english_query": "Why does my stomach hurt?",
+        "document_id": "medquad-9917d4f43fc9aea5",
+        "faq_question": "What to do for Gastritis ?",
+        "raw_score": 0.6750280857086182,
+        "relevant_topic": true,
+        "question_similarity": 0.4471227526664734,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "stomach"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "How is cystic fibrosis inherited?",
+        "english_query": "How is cystic fibrosis inherited?",
+        "document_id": "medquad-4dca3f9f4054916c",
+        "faq_question": "What is (are) cystic fibrosis ?",
+        "raw_score": 0.8254674673080444,
+        "relevant_topic": true,
+        "question_similarity": 0.8411144018173218,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "cystic",
+          "fibrosis",
+          "inherited"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "What are the symptoms of Wilson disease?",
+        "english_query": "What are the symptoms of Wilson disease?",
+        "document_id": "medquad-6d43121f2506fba0",
+        "faq_question": "What are the symptoms of Wilson Disease ?",
+        "raw_score": 0.8466818332672119,
+        "relevant_topic": true,
+        "question_similarity": 0.9993891716003418,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "wilson"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "What disease did this person have?",
+        "english_query": "What disease did this person have?",
+        "document_id": "medquad-60606bbd26aa46d3",
+        "faq_question": "How many people are affected by Erdheim-Chester disease ?",
+        "raw_score": 0.5919595956802368,
+        "relevant_topic": false,
+        "question_similarity": 0.6165502071380615,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What is Marfan syndrome?",
+        "english_query": "What is Marfan syndrome?",
+        "document_id": "medquad-6e81a80471f7b89f",
+        "faq_question": "What is (are) Marfan syndrome ?",
+        "raw_score": 0.8594882488250732,
+        "relevant_topic": true,
+        "question_similarity": 0.9613542556762695,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "marfan",
+          "syndrome"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "How is pneumonia treated?",
+        "english_query": "How is pneumonia treated?",
+        "document_id": "medquad-2f8dbfe995529e55",
+        "faq_question": "What are the treatments for Pneumonia ?",
+        "raw_score": 0.7382234334945679,
+        "relevant_topic": true,
+        "question_similarity": 0.9166153073310852,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "pneumonia",
+          "treated"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "Who is Taylor Swift?",
+        "english_query": "Who is Taylor Swift?",
+        "document_id": "medquad-faaad1794fa756c6",
+        "faq_question": "What are the symptoms of Hailey-Hailey disease ?",
+        "raw_score": 0.3349164128303528,
+        "relevant_topic": false,
+        "question_similarity": 0.24167245626449585,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Explain Python decorators.",
+        "english_query": "Explain Python decorators.",
+        "document_id": "medquad-a3b0609e3fb537f3",
+        "faq_question": "What are the genetic changes related to fumarase deficiency ?",
+        "raw_score": 0.31845754384994507,
+        "relevant_topic": false,
+        "question_similarity": 0.11930513381958008,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "How do I change a bicycle tyre?",
+        "english_query": "How do I change a bicycle tyre?",
+        "document_id": "medquad-13760c2331d1c7a8",
+        "faq_question": "How to prevent Perineal Injury in Males ?",
+        "raw_score": 0.3167468309402466,
+        "relevant_topic": false,
+        "question_similarity": 0.10468446463346481,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What is the score of the football game?",
+        "english_query": "What is the score of the football game?",
+        "document_id": "medquad-7820192cb007708a",
+        "faq_question": "Do you have information about Vital Signs",
+        "raw_score": 0.25852832198143005,
+        "relevant_topic": false,
+        "question_similarity": 0.10662691295146942,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What does TB mean on a hard drive?",
+        "english_query": "What does TB mean on a hard drive?",
+        "document_id": "medquad-03dec64a95910bb9",
+        "faq_question": "How to diagnose Tuberculosis (TB) ?",
+        "raw_score": 0.6137782335281372,
+        "relevant_topic": false,
+        "question_similarity": 0.5898262858390808,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "hard"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Is it serious?",
+        "english_query": "Is it serious?",
+        "document_id": "medquad-85dcc2c13ad2e698",
+        "faq_question": "What to do for Fecal Incontinence ?",
+        "raw_score": 0.3678765892982483,
+        "relevant_topic": false,
+        "question_similarity": 0.1731158196926117,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      }
+    ],
+    "tfidf:english:en": [
+      {
+        "split": "calibration",
+        "query": "What is asthma?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-be01eb7b76894d3d",
+        "faq_question": "What are the treatments for Asthma ?",
+        "raw_score": 0.6648691346026089,
+        "relevant_topic": true,
+        "question_similarity": 0.7210190296173096,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the symptoms of diabetes?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-aa4e2c5f1944ffb9",
+        "faq_question": "What are the symptoms of Diabetes mellitus type 1 ?",
+        "raw_score": 0.28183381251405015,
+        "relevant_topic": true,
+        "question_similarity": 0.8423812985420227,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "Why do I feel dizzy?",
+        "english_query": "Why do I feel dizzy?",
+        "document_id": "medquad-fa731e418acc20a8",
+        "faq_question": "What is (are) Dizziness and Vertigo ?",
+        "raw_score": 0.29715828338408345,
+        "relevant_topic": true,
+        "question_similarity": 0.6330066919326782,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "dizziness"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms",
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What causes frequent headaches?",
+        "english_query": "What causes frequent headaches?",
+        "document_id": "medquad-c0ee15c97b8a373e",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.13880087188830054,
+        "relevant_topic": true,
+        "question_similarity": 0.8005542755126953,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What is AL amyloidosis?",
+        "english_query": "What is AL amyloidosis?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 0.41042532352248684,
+        "relevant_topic": true,
+        "question_similarity": 0.9537114500999451,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "amyloidosis"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "How is tuberculosis diagnosed?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-d24ea4344e3632c8",
+        "faq_question": "What is (are) Mycobacterial Infections ?",
+        "raw_score": 0.22619186088408413,
+        "relevant_topic": true,
+        "question_similarity": 0.4729791581630707,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "tuberculosis"
+        ],
+        "missing_facets": [
+          "diagnosis"
+        ],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "How can malaria be prevented?",
+        "english_query": "How can malaria be prevented?",
+        "document_id": "medquad-047cde936eb0ddaf",
+        "faq_question": "What is (are) Malaria ?",
+        "raw_score": 0.38722457632592855,
+        "relevant_topic": true,
+        "question_similarity": 0.739582896232605,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "malaria",
+          "prevented"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "prevention"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What causes migraine?",
+        "english_query": "What causes migraine?",
+        "document_id": "medquad-223ca056124c2046",
+        "faq_question": "what research (or clinical trials) is being done for Migraine ?",
+        "raw_score": 0.20722151051326596,
+        "relevant_topic": true,
+        "question_similarity": 0.6947644352912903,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What is Gaucher disease?",
+        "english_query": "What is Gaucher disease?",
+        "document_id": "medquad-492f7de10b0e664c",
+        "faq_question": "What is (are) Gaucher disease ?",
+        "raw_score": 0.7973203038801429,
+        "relevant_topic": true,
+        "question_similarity": 0.9632588624954224,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "gaucher"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the symptoms of anemia?",
+        "english_query": "What are the symptoms of anemia?",
+        "document_id": "medquad-ddeb8ec7b67080bf",
+        "faq_question": "What are the symptoms of Anemia ?",
+        "raw_score": 0.28244300278813844,
+        "relevant_topic": true,
+        "question_similarity": 0.9985681176185608,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "anemia"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the side effects of paracetamol?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-6f07da520e05900d",
+        "faq_question": "Do you have information about Cancer Chemotherapy",
+        "raw_score": 0.2155450918561006,
+        "relevant_topic": false,
+        "question_similarity": 0.23762397468090057,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is the treatment for experimental Zorvex-99 syndrome?",
+        "english_query": "What is the treatment for experimental Zorvex-99 syndrome?",
+        "document_id": "medquad-5cea82113fef3faa",
+        "faq_question": "Is Cornelia de Lange syndrome inherited ?",
+        "raw_score": 0.11366691596396329,
+        "relevant_topic": false,
+        "question_similarity": 0.3039003014564514,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "syndrome"
+        ],
+        "missing_facets": [
+          "treatment"
+        ],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is Allu Arjun?",
+        "english_query": "Who is Allu Arjun?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.028843175619840622,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is Virat Kohli?",
+        "english_query": "Who is Virat Kohli?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.12045277655124664,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is the prime minister of India?",
+        "english_query": "Who is the prime minister of India?",
+        "document_id": "medquad-42bf7c4e098b3dbd",
+        "faq_question": "How many people are affected by Ghosal hematodiaphyseal dysplasia ?",
+        "raw_score": 0.14448601285660073,
+        "relevant_topic": false,
+        "question_similarity": 0.10951459407806396,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "india"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is React JS?",
+        "english_query": "What is React JS?",
+        "document_id": "medquad-26f6b6e64aabd8bc",
+        "faq_question": "What is (are) Asthma ?",
+        "raw_score": 0.11316927239886297,
+        "relevant_topic": false,
+        "question_similarity": 0.2946312725543976,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "react"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who won the cricket match?",
+        "english_query": "Who won the cricket match?",
+        "document_id": "medquad-fed9ebdd04233e27",
+        "faq_question": "Do you have information about Cosmetic Dentistry",
+        "raw_score": 0.1263785511043251,
+        "relevant_topic": false,
+        "question_similarity": -0.00123974762391299,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "match"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Tell me about the movie Pushpa.",
+        "english_query": "Tell me about the movie Pushpa.",
+        "document_id": "medquad-27f92bac589b4806",
+        "faq_question": "How to diagnose Alzheimer's Caregiving ?",
+        "raw_score": 0.0668714089106402,
+        "relevant_topic": false,
+        "question_similarity": 0.06387505680322647,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What does AL mean in baseball standings?",
+        "english_query": "What does AL mean in baseball standings?",
+        "document_id": "medquad-e85cec4307ff7306",
+        "faq_question": "What are the symptoms of Mousa Al din Al Nassar syndrome ?",
+        "raw_score": 0.1302151524645077,
+        "relevant_topic": false,
+        "question_similarity": 0.21286627650260925,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Explain a JavaScript Promise.",
+        "english_query": "Explain a JavaScript Promise.",
+        "document_id": "medquad-23d5498f0964360a",
+        "faq_question": "What are the treatments for Leukodystrophy ?",
+        "raw_score": 0.12839853012661062,
+        "relevant_topic": false,
+        "question_similarity": -0.04644683748483658,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "promise"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Plan a holiday in Paris.",
+        "english_query": "Plan a holiday in Paris.",
+        "document_id": "medquad-687fe67ded1683ee",
+        "faq_question": "What are the symptoms of Paris-Trousseau thrombocytopenia ?",
+        "raw_score": 0.20247985987598552,
+        "relevant_topic": false,
+        "question_similarity": 0.39856401085853577,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Recommend a laptop for college.",
+        "english_query": "Recommend a laptop for college.",
+        "document_id": "medquad-0af489c1894f2398",
+        "faq_question": "What are the treatments for rheumatoid arthritis ?",
+        "raw_score": 0.1927492639658022,
+        "relevant_topic": false,
+        "question_similarity": 0.13053643703460693,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "college"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is AL?",
+        "english_query": "What is AL?",
+        "document_id": "medquad-e85cec4307ff7306",
+        "faq_question": "What are the symptoms of Mousa Al din Al Nassar syndrome ?",
+        "raw_score": 0.26338644169174347,
+        "relevant_topic": false,
+        "question_similarity": 0.3310391902923584,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Tell me about it.",
+        "english_query": "Tell me about it.",
+        "document_id": "medquad-27f92bac589b4806",
+        "faq_question": "How to diagnose Alzheimer's Caregiving ?",
+        "raw_score": 0.12986264245146842,
+        "relevant_topic": false,
+        "question_similarity": 0.06749019771814346,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Why does my stomach hurt?",
+        "english_query": "Why does my stomach hurt?",
+        "document_id": "medquad-089b46f5d95a932a",
+        "faq_question": "What is (are) Stomach Cancer ?",
+        "raw_score": 0.18309088536513557,
+        "relevant_topic": true,
+        "question_similarity": 0.46659916639328003,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "stomach"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "How is cystic fibrosis inherited?",
+        "english_query": "How is cystic fibrosis inherited?",
+        "document_id": "medquad-4dca3f9f4054916c",
+        "faq_question": "What is (are) cystic fibrosis ?",
+        "raw_score": 0.44212913043102114,
+        "relevant_topic": true,
+        "question_similarity": 0.8411144018173218,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "cystic",
+          "fibrosis",
+          "inherited"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "What are the symptoms of Wilson disease?",
+        "english_query": "What are the symptoms of Wilson disease?",
+        "document_id": "medquad-2a1cd8a8de39fdb0",
+        "faq_question": "What to do for Wilson Disease ?",
+        "raw_score": 0.5175798852060002,
+        "relevant_topic": true,
+        "question_similarity": 0.8002277612686157,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "wilson"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "What disease did this person have?",
+        "english_query": "What disease did this person have?",
+        "document_id": "medquad-1654174ffa63ee83",
+        "faq_question": "What is (are) Problems with Smell ?",
+        "raw_score": 0.12113470081180845,
+        "relevant_topic": false,
+        "question_similarity": 0.1651434600353241,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What is Marfan syndrome?",
+        "english_query": "What is Marfan syndrome?",
+        "document_id": "medquad-d926f0ce3aa58bfe",
+        "faq_question": "What is (are) Marfan Syndrome ?",
+        "raw_score": 0.7047414400077577,
+        "relevant_topic": true,
+        "question_similarity": 0.9617295861244202,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "marfan",
+          "syndrome"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "How is pneumonia treated?",
+        "english_query": "How is pneumonia treated?",
+        "document_id": "medquad-2f8dbfe995529e55",
+        "faq_question": "What are the treatments for Pneumonia ?",
+        "raw_score": 0.2877416370408973,
+        "relevant_topic": true,
+        "question_similarity": 0.9166153073310852,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "pneumonia",
+          "treated"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "Who is Taylor Swift?",
+        "english_query": "Who is Taylor Swift?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.07001686096191406,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Explain Python decorators.",
+        "english_query": "Explain Python decorators.",
+        "document_id": "medquad-28e7cb2417bc9363",
+        "faq_question": "What causes Prostate Cancer ?",
+        "raw_score": 0.13330848312039056,
+        "relevant_topic": false,
+        "question_similarity": 0.042928773909807205,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "explain"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "How do I change a bicycle tyre?",
+        "english_query": "How do I change a bicycle tyre?",
+        "document_id": "medquad-b9605e08f6b53c5d",
+        "faq_question": "What causes Problems with Smell ?",
+        "raw_score": 0.10612254014847798,
+        "relevant_topic": false,
+        "question_similarity": 0.007646434009075165,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "change"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What is the score of the football game?",
+        "english_query": "What is the score of the football game?",
+        "document_id": "medquad-09f6ddc13d49b5a9",
+        "faq_question": "What is the outlook for Brain and Spinal Tumors ?",
+        "raw_score": 0.1369026154076674,
+        "relevant_topic": false,
+        "question_similarity": 0.0395650789141655,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "score"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What does TB mean on a hard drive?",
+        "english_query": "What does TB mean on a hard drive?",
+        "document_id": "medquad-03dec64a95910bb9",
+        "faq_question": "How to diagnose Tuberculosis (TB) ?",
+        "raw_score": 0.3849441020811412,
+        "relevant_topic": false,
+        "question_similarity": 0.5898262858390808,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "hard"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Is it serious?",
+        "english_query": "Is it serious?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.03863191604614258,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      }
+    ],
+    "bm25:english:en": [
+      {
+        "split": "calibration",
+        "query": "What is asthma?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-d59abdd60df5d9d9",
+        "faq_question": "How to prevent Asthma ?",
+        "raw_score": 11.145928983363312,
+        "relevant_topic": true,
+        "question_similarity": 0.7398776412010193,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the symptoms of diabetes?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-692f8d2e379a0ed6",
+        "faq_question": "What is (are) Diabetes ?",
+        "raw_score": 6.663538379232855,
+        "relevant_topic": true,
+        "question_similarity": 0.6755034327507019,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "Why do I feel dizzy?",
+        "english_query": "Why do I feel dizzy?",
+        "document_id": "medquad-fa731e418acc20a8",
+        "faq_question": "What is (are) Dizziness and Vertigo ?",
+        "raw_score": 20.482181364677892,
+        "relevant_topic": true,
+        "question_similarity": 0.6330066919326782,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "dizziness"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms",
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What causes frequent headaches?",
+        "english_query": "What causes frequent headaches?",
+        "document_id": "medquad-6bd44d5001ae192b",
+        "faq_question": "What are the symptoms of Depression ?",
+        "raw_score": 11.367543947309045,
+        "relevant_topic": true,
+        "question_similarity": 0.3403501808643341,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [
+          "causes"
+        ],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is AL amyloidosis?",
+        "english_query": "What is AL amyloidosis?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 21.410212623241932,
+        "relevant_topic": true,
+        "question_similarity": 0.9537114500999451,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "amyloidosis"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "How is tuberculosis diagnosed?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-d24ea4344e3632c8",
+        "faq_question": "What is (are) Mycobacterial Infections ?",
+        "raw_score": 11.27888977522729,
+        "relevant_topic": true,
+        "question_similarity": 0.4729791581630707,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "tuberculosis"
+        ],
+        "missing_facets": [
+          "diagnosis"
+        ],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "How can malaria be prevented?",
+        "english_query": "How can malaria be prevented?",
+        "document_id": "medquad-047cde936eb0ddaf",
+        "faq_question": "What is (are) Malaria ?",
+        "raw_score": 21.20178219003941,
+        "relevant_topic": true,
+        "question_similarity": 0.739582896232605,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "malaria",
+          "prevented"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "prevention"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What causes migraine?",
+        "english_query": "What causes migraine?",
+        "document_id": "medquad-475474aee9b72dd9",
+        "faq_question": "Is sporadic hemiplegic migraine inherited ?",
+        "raw_score": 11.908349881891963,
+        "relevant_topic": true,
+        "question_similarity": 0.7663758993148804,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What is Gaucher disease?",
+        "english_query": "What is Gaucher disease?",
+        "document_id": "medquad-492f7de10b0e664c",
+        "faq_question": "What is (are) Gaucher disease ?",
+        "raw_score": 17.20910412346096,
+        "relevant_topic": true,
+        "question_similarity": 0.9632588624954224,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "gaucher"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "What are the symptoms of anemia?",
+        "english_query": "What are the symptoms of anemia?",
+        "document_id": "medquad-600caf171bbd42f2",
+        "faq_question": "What are the treatments for Fanconi anemia ?",
+        "raw_score": 7.4865138267881015,
+        "relevant_topic": true,
+        "question_similarity": 0.5633819699287415,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "anemia"
+        ],
+        "missing_facets": [
+          "symptoms"
+        ],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What are the side effects of paracetamol?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-6f07da520e05900d",
+        "faq_question": "Do you have information about Cancer Chemotherapy",
+        "raw_score": 6.69590182979114,
+        "relevant_topic": false,
+        "question_similarity": 0.23762397468090057,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is the treatment for experimental Zorvex-99 syndrome?",
+        "english_query": "What is the treatment for experimental Zorvex-99 syndrome?",
+        "document_id": "medquad-5cea82113fef3faa",
+        "faq_question": "Is Cornelia de Lange syndrome inherited ?",
+        "raw_score": 12.708243598290062,
+        "relevant_topic": false,
+        "question_similarity": 0.3039003014564514,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "syndrome"
+        ],
+        "missing_facets": [
+          "treatment"
+        ],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is Allu Arjun?",
+        "english_query": "Who is Allu Arjun?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.028843175619840622,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is Virat Kohli?",
+        "english_query": "Who is Virat Kohli?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.12045277655124664,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who is the prime minister of India?",
+        "english_query": "Who is the prime minister of India?",
+        "document_id": "medquad-42bf7c4e098b3dbd",
+        "faq_question": "How many people are affected by Ghosal hematodiaphyseal dysplasia ?",
+        "raw_score": 11.272407543388205,
+        "relevant_topic": false,
+        "question_similarity": 0.10951459407806396,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "india"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is React JS?",
+        "english_query": "What is React JS?",
+        "document_id": "medquad-26f6b6e64aabd8bc",
+        "faq_question": "What is (are) Asthma ?",
+        "raw_score": 8.732850045956784,
+        "relevant_topic": false,
+        "question_similarity": 0.2946312725543976,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "react"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Who won the cricket match?",
+        "english_query": "Who won the cricket match?",
+        "document_id": "medquad-fed9ebdd04233e27",
+        "faq_question": "Do you have information about Cosmetic Dentistry",
+        "raw_score": 11.909389706694359,
+        "relevant_topic": false,
+        "question_similarity": -0.00123974762391299,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "match"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Tell me about the movie Pushpa.",
+        "english_query": "Tell me about the movie Pushpa.",
+        "document_id": "medquad-5df8b74d9ef56837",
+        "faq_question": "What is (are) bradyopsia ?",
+        "raw_score": 7.993970450909216,
+        "relevant_topic": false,
+        "question_similarity": 0.20260347425937653,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "movie"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What does AL mean in baseball standings?",
+        "english_query": "What does AL mean in baseball standings?",
+        "document_id": "medquad-aae9549dd351058e",
+        "faq_question": "Who is at risk for Laryngeal Cancer? ?",
+        "raw_score": 12.392847358141527,
+        "relevant_topic": false,
+        "question_similarity": -0.008816945366561413,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Explain a JavaScript Promise.",
+        "english_query": "Explain a JavaScript Promise.",
+        "document_id": "medquad-23d5498f0964360a",
+        "faq_question": "What are the treatments for Leukodystrophy ?",
+        "raw_score": 10.838094286659816,
+        "relevant_topic": false,
+        "question_similarity": -0.04644683748483658,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "promise"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Plan a holiday in Paris.",
+        "english_query": "Plan a holiday in Paris.",
+        "document_id": "medquad-687fe67ded1683ee",
+        "faq_question": "What are the symptoms of Paris-Trousseau thrombocytopenia ?",
+        "raw_score": 11.931713298814545,
+        "relevant_topic": false,
+        "question_similarity": 0.39856401085853577,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Recommend a laptop for college.",
+        "english_query": "Recommend a laptop for college.",
+        "document_id": "medquad-34f513423753bb9e",
+        "faq_question": "How to diagnose MTHFR gene mutation ?",
+        "raw_score": 12.921328590305112,
+        "relevant_topic": false,
+        "question_similarity": 0.002372805494815111,
+        "topic_coverage": 0.6666666666666666,
+        "matched_topics": [
+          "college",
+          "recommend"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "What is AL?",
+        "english_query": "What is AL?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 10.951836872054528,
+        "relevant_topic": false,
+        "question_similarity": 0.5167067646980286,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "Tell me about it.",
+        "english_query": "Tell me about it.",
+        "document_id": "medquad-27f92bac589b4806",
+        "faq_question": "How to diagnose Alzheimer's Caregiving ?",
+        "raw_score": 7.530194807825896,
+        "relevant_topic": false,
+        "question_similarity": 0.06749019771814346,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Why does my stomach hurt?",
+        "english_query": "Why does my stomach hurt?",
+        "document_id": "medquad-6526482fd8e828e0",
+        "faq_question": "What is (are) Self-harm ?",
+        "raw_score": 12.900417184804915,
+        "relevant_topic": false,
+        "question_similarity": 0.0709700882434845,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "hurt"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "How is cystic fibrosis inherited?",
+        "english_query": "How is cystic fibrosis inherited?",
+        "document_id": "medquad-4dca3f9f4054916c",
+        "faq_question": "What is (are) cystic fibrosis ?",
+        "raw_score": 19.931684986934567,
+        "relevant_topic": true,
+        "question_similarity": 0.8411144018173218,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "cystic",
+          "fibrosis",
+          "inherited"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "What are the symptoms of Wilson disease?",
+        "english_query": "What are the symptoms of Wilson disease?",
+        "document_id": "medquad-2a1cd8a8de39fdb0",
+        "faq_question": "What to do for Wilson Disease ?",
+        "raw_score": 14.063790265798069,
+        "relevant_topic": true,
+        "question_similarity": 0.8002277612686157,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "wilson"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "What disease did this person have?",
+        "english_query": "What disease did this person have?",
+        "document_id": "medquad-1654174ffa63ee83",
+        "faq_question": "What is (are) Problems with Smell ?",
+        "raw_score": 11.170908492560047,
+        "relevant_topic": false,
+        "question_similarity": 0.1651434600353241,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What is Marfan syndrome?",
+        "english_query": "What is Marfan syndrome?",
+        "document_id": "medquad-9248c75af3475dba",
+        "faq_question": "What is (are) Marfan Syndrome ?",
+        "raw_score": 15.565473350437955,
+        "relevant_topic": true,
+        "question_similarity": 0.9617295861244202,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "marfan",
+          "syndrome"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "How is pneumonia treated?",
+        "english_query": "How is pneumonia treated?",
+        "document_id": "medquad-2f8dbfe995529e55",
+        "faq_question": "What are the treatments for Pneumonia ?",
+        "raw_score": 13.621946303191642,
+        "relevant_topic": true,
+        "question_similarity": 0.9166153073310852,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "pneumonia",
+          "treated"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "Who is Taylor Swift?",
+        "english_query": "Who is Taylor Swift?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.07001686096191406,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "Explain Python decorators.",
+        "english_query": "Explain Python decorators.",
+        "document_id": "medquad-28e7cb2417bc9363",
+        "faq_question": "What causes Prostate Cancer ?",
+        "raw_score": 8.230565129528948,
+        "relevant_topic": false,
+        "question_similarity": 0.042928773909807205,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "explain"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "How do I change a bicycle tyre?",
+        "english_query": "How do I change a bicycle tyre?",
+        "document_id": "medquad-448f16c21d8281f9",
+        "faq_question": "What is the outlook for Agenesis of the Corpus Callosum ?",
+        "raw_score": 9.61150231137369,
+        "relevant_topic": false,
+        "question_similarity": -0.08650431036949158,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "bicycle"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What is the score of the football game?",
+        "english_query": "What is the score of the football game?",
+        "document_id": "medquad-09f6ddc13d49b5a9",
+        "faq_question": "What is the outlook for Brain and Spinal Tumors ?",
+        "raw_score": 12.84608773960064,
+        "relevant_topic": false,
+        "question_similarity": 0.0395650789141655,
+        "topic_coverage": 0.3333333333333333,
+        "matched_topics": [
+          "score"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "What does TB mean on a hard drive?",
+        "english_query": "What does TB mean on a hard drive?",
+        "document_id": "medquad-03dec64a95910bb9",
+        "faq_question": "How to diagnose Tuberculosis (TB) ?",
+        "raw_score": 21.53484767208193,
+        "relevant_topic": false,
+        "question_similarity": 0.5898262858390808,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "hard"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      }
+    ],
+    "semantic:translate:hi": [
+      {
+        "split": "calibration",
+        "query": "मधुमेह के लक्षण क्या हैं?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-2cd2681e7368ea69",
+        "faq_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+        "raw_score": 0.8811297416687012,
+        "relevant_topic": true,
+        "question_similarity": 0.8510316610336304,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "माइग्रेन के कारण क्या हैं?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-8ba4249df8679026",
+        "faq_question": "What is (are) Migraine ?",
+        "raw_score": 0.7887568473815918,
+        "relevant_topic": true,
+        "question_similarity": 0.8268102407455444,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "एल amyloidosis क्या है?",
+        "english_query": "What is L-amyloidosis?",
+        "document_id": "medquad-67048e082923a8d5",
+        "faq_question": "What is (are) Amyloidosis AA ?",
+        "raw_score": 0.7729908227920532,
+        "relevant_topic": true,
+        "question_similarity": 0.8181034922599792,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अल्लू अर्जुन कौन हैं?",
+        "english_query": "अल्लू अर्जुन कौन हैं?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 0.4157717227935791,
+        "relevant_topic": false,
+        "question_similarity": 0.4028770923614502,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "विराट कोहली कौन हैं?",
+        "english_query": "विराट कोहली कौन हैं?",
+        "document_id": "medquad-62df336235895892",
+        "faq_question": "What is (are) Keratosis follicularis spinulosa decalvans ?",
+        "raw_score": 0.32167041301727295,
+        "relevant_topic": false,
+        "question_similarity": 0.2877556085586548,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "पुष्पा फिल्म के बारे में बताओ।",
+        "english_query": "पुष्पा फिल्म के बारे में बताओ।",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.2700963020324707,
+        "relevant_topic": false,
+        "question_similarity": 0.1157037764787674,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "भारत के प्रधानमंत्री कौन हैं?",
+        "english_query": "भारत के प्रधानमंत्री कौन हैं?",
+        "document_id": "medquad-b02a0a204ae3efe6",
+        "faq_question": "What is (are) Parasites - Lice - Head Lice ?",
+        "raw_score": 0.24702438712120056,
+        "relevant_topic": false,
+        "question_similarity": 0.16811154782772064,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अस्थमा क्या है?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-7021d577d48b5e05",
+        "faq_question": "What is (are) allergic asthma ?",
+        "raw_score": 0.8389370441436768,
+        "relevant_topic": true,
+        "question_similarity": 0.8705340027809143,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "मुझे बार-बार सिरदर्द क्यों होता है?",
+        "english_query": "Why do I have frequent headaches?",
+        "document_id": "medquad-fa155f9f97d8710f",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.8117529153823853,
+        "relevant_topic": true,
+        "question_similarity": 0.7617147564888,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "semantic:direct:hi": [
+      {
+        "split": "calibration",
+        "query": "मधुमेह के लक्षण क्या हैं?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-2cd2681e7368ea69",
+        "faq_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+        "raw_score": 0.8404674530029297,
+        "relevant_topic": true,
+        "question_similarity": 0.8510316610336304,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "माइग्रेन के कारण क्या हैं?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-03b3eaa4a794b9ae",
+        "faq_question": "What is (are) sporadic hemiplegic migraine ?",
+        "raw_score": 0.6365790367126465,
+        "relevant_topic": true,
+        "question_similarity": 0.802564799785614,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "एल amyloidosis क्या है?",
+        "english_query": "What is L-amyloidosis?",
+        "document_id": "medquad-67048e082923a8d5",
+        "faq_question": "What is (are) Amyloidosis AA ?",
+        "raw_score": 0.8613974452018738,
+        "relevant_topic": true,
+        "question_similarity": 0.8181034922599792,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अल्लू अर्जुन कौन हैं?",
+        "english_query": "अल्लू अर्जुन कौन हैं?",
+        "document_id": "medquad-4a169dfc76c6ef4a",
+        "faq_question": "What is (are) AL amyloidosis ?",
+        "raw_score": 0.4157717227935791,
+        "relevant_topic": false,
+        "question_similarity": 0.4028770923614502,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "विराट कोहली कौन हैं?",
+        "english_query": "विराट कोहली कौन हैं?",
+        "document_id": "medquad-62df336235895892",
+        "faq_question": "What is (are) Keratosis follicularis spinulosa decalvans ?",
+        "raw_score": 0.32167041301727295,
+        "relevant_topic": false,
+        "question_similarity": 0.2877556085586548,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "पुष्पा फिल्म के बारे में बताओ।",
+        "english_query": "पुष्पा फिल्म के बारे में बताओ।",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.2700963020324707,
+        "relevant_topic": false,
+        "question_similarity": 0.1157037764787674,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "भारत के प्रधानमंत्री कौन हैं?",
+        "english_query": "भारत के प्रधानमंत्री कौन हैं?",
+        "document_id": "medquad-b02a0a204ae3efe6",
+        "faq_question": "What is (are) Parasites - Lice - Head Lice ?",
+        "raw_score": 0.24702438712120056,
+        "relevant_topic": false,
+        "question_similarity": 0.16811154782772064,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अस्थमा क्या है?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-7021d577d48b5e05",
+        "faq_question": "What is (are) allergic asthma ?",
+        "raw_score": 0.8137768507003784,
+        "relevant_topic": true,
+        "question_similarity": 0.8705340027809143,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "मुझे बार-बार सिरदर्द क्यों होता है?",
+        "english_query": "Why do I have frequent headaches?",
+        "document_id": "medquad-fa155f9f97d8710f",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.7890735864639282,
+        "relevant_topic": true,
+        "question_similarity": 0.7617147564888,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "tfidf:translate:hi": [
+      {
+        "split": "calibration",
+        "query": "मधुमेह के लक्षण क्या हैं?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-aa4e2c5f1944ffb9",
+        "faq_question": "What are the symptoms of Diabetes mellitus type 1 ?",
+        "raw_score": 0.28183381251405015,
+        "relevant_topic": true,
+        "question_similarity": 0.8423812985420227,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "माइग्रेन के कारण क्या हैं?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-ae2e1f00094bf3e4",
+        "faq_question": "What causes Basilar migraine ?",
+        "raw_score": 0.3824327650175475,
+        "relevant_topic": true,
+        "question_similarity": 0.8684203028678894,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "एल amyloidosis क्या है?",
+        "english_query": "What is L-amyloidosis?",
+        "document_id": "medquad-c2a66c22b6000be9",
+        "faq_question": "What to do for Amyloidosis and Kidney Disease ?",
+        "raw_score": 0.4084508059862795,
+        "relevant_topic": true,
+        "question_similarity": 0.5789595246315002,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अल्लू अर्जुन कौन हैं?",
+        "english_query": "अल्लू अर्जुन कौन हैं?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.00038118421798571944,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "विराट कोहली कौन हैं?",
+        "english_query": "विराट कोहली कौन हैं?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.10445407032966614,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "पुष्पा फिल्म के बारे में बताओ।",
+        "english_query": "पुष्पा फिल्म के बारे में बताओ।",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.011044751852750778,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "भारत के प्रधानमंत्री कौन हैं?",
+        "english_query": "भारत के प्रधानमंत्री कौन हैं?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.012781495228409767,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अस्थमा क्या है?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-be01eb7b76894d3d",
+        "faq_question": "What are the treatments for Asthma ?",
+        "raw_score": 0.6648691346026089,
+        "relevant_topic": true,
+        "question_similarity": 0.7210190296173096,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "मुझे बार-बार सिरदर्द क्यों होता है?",
+        "english_query": "Why do I have frequent headaches?",
+        "document_id": "medquad-c0ee15c97b8a373e",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.177584608378254,
+        "relevant_topic": true,
+        "question_similarity": 0.7617147564888,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      }
+    ],
+    "bm25:translate:hi": [
+      {
+        "split": "calibration",
+        "query": "मधुमेह के लक्षण क्या हैं?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-692f8d2e379a0ed6",
+        "faq_question": "What is (are) Diabetes ?",
+        "raw_score": 6.663538379232855,
+        "relevant_topic": true,
+        "question_similarity": 0.6755034327507019,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "माइग्रेन के कारण क्या हैं?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-ae2e1f00094bf3e4",
+        "faq_question": "What causes Basilar migraine ?",
+        "raw_score": 15.4432825290114,
+        "relevant_topic": true,
+        "question_similarity": 0.8684203028678894,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "एल amyloidosis क्या है?",
+        "english_query": "What is L-amyloidosis?",
+        "document_id": "medquad-c2a66c22b6000be9",
+        "faq_question": "What to do for Amyloidosis and Kidney Disease ?",
+        "raw_score": 11.624473937628549,
+        "relevant_topic": true,
+        "question_similarity": 0.5789595246315002,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अल्लू अर्जुन कौन हैं?",
+        "english_query": "अल्लू अर्जुन कौन हैं?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.00038118421798571944,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "विराट कोहली कौन हैं?",
+        "english_query": "विराट कोहली कौन हैं?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.10445407032966614,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "पुष्पा फिल्म के बारे में बताओ।",
+        "english_query": "पुष्पा फिल्म के बारे में बताओ।",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.011044751852750778,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "भारत के प्रधानमंत्री कौन हैं?",
+        "english_query": "भारत के प्रधानमंत्री कौन हैं?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.012781495228409767,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "अस्थमा क्या है?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-d59abdd60df5d9d9",
+        "faq_question": "How to prevent Asthma ?",
+        "raw_score": 11.145928983363312,
+        "relevant_topic": true,
+        "question_similarity": 0.7398776412010193,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "मुझे बार-बार सिरदर्द क्यों होता है?",
+        "english_query": "Why do I have frequent headaches?",
+        "document_id": "medquad-6bd44d5001ae192b",
+        "faq_question": "What are the symptoms of Depression ?",
+        "raw_score": 11.367543947309045,
+        "relevant_topic": true,
+        "question_similarity": 0.3291538953781128,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [
+          "causes"
+        ],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "semantic:translate:te": [
+      {
+        "split": "calibration",
+        "query": "మధుమేహం లక్షణాలు ఏమిటి?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-2cd2681e7368ea69",
+        "faq_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+        "raw_score": 0.8811297416687012,
+        "relevant_topic": true,
+        "question_similarity": 0.8510316610336304,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-8ba4249df8679026",
+        "faq_question": "What is (are) Migraine ?",
+        "raw_score": 0.7887568473815918,
+        "relevant_topic": true,
+        "question_similarity": 0.8268102407455444,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "పారాసిటమాల్ దుష్ప్రభావాలు ఏమిటి?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-ce2e4fdffcc73581",
+        "faq_question": "What are the treatments for Colorectal Cancer ?",
+        "raw_score": 0.5650563836097717,
+        "relevant_topic": false,
+        "question_similarity": 0.20280076563358307,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "అల్లు అర్జున్ ఎవరు?",
+        "english_query": "అల్లు అర్జున్ ఎవరు?",
+        "document_id": "medquad-af594223618891d2",
+        "faq_question": "What is (are) Opitz G/BBB syndrome ?",
+        "raw_score": 0.32350343465805054,
+        "relevant_topic": false,
+        "question_similarity": 0.27227118611335754,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "విరాట్ కోహ్లీ ఎవరు?",
+        "english_query": "విరాట్ కోహ్లీ ఎవరు?",
+        "document_id": "medquad-6343b8043a0ae190",
+        "faq_question": "What is (are) Potocki-Shaffer syndrome ?",
+        "raw_score": 0.29493045806884766,
+        "relevant_topic": false,
+        "question_similarity": 0.33042463660240173,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "పుష్ప సినిమా గురించి చెప్పండి.",
+        "english_query": "పుష్ప సినిమా గురించి చెప్పండి.",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.4385954439640045,
+        "relevant_topic": false,
+        "question_similarity": 0.09716738760471344,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "english_query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.33342117071151733,
+        "relevant_topic": false,
+        "question_similarity": 0.05618663132190704,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ఆస్తమా అంటే ఏమిటి?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-7021d577d48b5e05",
+        "faq_question": "What is (are) allergic asthma ?",
+        "raw_score": 0.8389370441436768,
+        "relevant_topic": true,
+        "question_similarity": 0.8705340027809143,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "నాకు తరచుగా తలనొప్పి ఎందుకు వస్తుంది?",
+        "english_query": "Why do I often get headaches?",
+        "document_id": "medquad-fa155f9f97d8710f",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.8129144310951233,
+        "relevant_topic": true,
+        "question_similarity": 0.7558283805847168,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "semantic:direct:te": [
+      {
+        "split": "calibration",
+        "query": "మధుమేహం లక్షణాలు ఏమిటి?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-28f43fde6cfc7b53",
+        "faq_question": "What is (are) complement factor I deficiency ?",
+        "raw_score": 0.6218531131744385,
+        "relevant_topic": false,
+        "question_similarity": 0.239000603556633,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [
+          "symptoms"
+        ],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-08e84c07b2e1b797",
+        "faq_question": "What is (are) Renal Tubular Acidosis ?",
+        "raw_score": 0.3365907669067383,
+        "relevant_topic": false,
+        "question_similarity": 0.17412510514259338,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "పారాసిటమాల్ దుష్ప్రభావాలు ఏమిటి?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-bebc83a9c4acffc6",
+        "faq_question": "What is (are) Heart Palpitations ?",
+        "raw_score": 0.5709171891212463,
+        "relevant_topic": false,
+        "question_similarity": 0.15321029722690582,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [
+          "side_effects"
+        ],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "అల్లు అర్జున్ ఎవరు?",
+        "english_query": "అల్లు అర్జున్ ఎవరు?",
+        "document_id": "medquad-af594223618891d2",
+        "faq_question": "What is (are) Opitz G/BBB syndrome ?",
+        "raw_score": 0.32350343465805054,
+        "relevant_topic": false,
+        "question_similarity": 0.27227118611335754,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "విరాట్ కోహ్లీ ఎవరు?",
+        "english_query": "విరాట్ కోహ్లీ ఎవరు?",
+        "document_id": "medquad-6343b8043a0ae190",
+        "faq_question": "What is (are) Potocki-Shaffer syndrome ?",
+        "raw_score": 0.29493045806884766,
+        "relevant_topic": false,
+        "question_similarity": 0.33042463660240173,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "పుష్ప సినిమా గురించి చెప్పండి.",
+        "english_query": "పుష్ప సినిమా గురించి చెప్పండి.",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.4385954439640045,
+        "relevant_topic": false,
+        "question_similarity": 0.09716738760471344,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "english_query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.33342117071151733,
+        "relevant_topic": false,
+        "question_similarity": 0.05618663132190704,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ఆస్తమా అంటే ఏమిటి?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-e6d2b22ba8c135a1",
+        "faq_question": "What is (are) Thoracic Outlet Syndrome ?",
+        "raw_score": 0.4808235466480255,
+        "relevant_topic": false,
+        "question_similarity": 0.2950343191623688,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "నాకు తరచుగా తలనొప్పి ఎందుకు వస్తుంది?",
+        "english_query": "Why do I often get headaches?",
+        "document_id": "medquad-03b3eaa4a794b9ae",
+        "faq_question": "What is (are) sporadic hemiplegic migraine ?",
+        "raw_score": 0.536109983921051,
+        "relevant_topic": true,
+        "question_similarity": 0.6718500256538391,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "tfidf:translate:te": [
+      {
+        "split": "calibration",
+        "query": "మధుమేహం లక్షణాలు ఏమిటి?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-aa4e2c5f1944ffb9",
+        "faq_question": "What are the symptoms of Diabetes mellitus type 1 ?",
+        "raw_score": 0.28183381251405015,
+        "relevant_topic": true,
+        "question_similarity": 0.8423812985420227,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-ae2e1f00094bf3e4",
+        "faq_question": "What causes Basilar migraine ?",
+        "raw_score": 0.3824327650175475,
+        "relevant_topic": true,
+        "question_similarity": 0.8684203028678894,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "పారాసిటమాల్ దుష్ప్రభావాలు ఏమిటి?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-6f07da520e05900d",
+        "faq_question": "Do you have information about Cancer Chemotherapy",
+        "raw_score": 0.2155450918561006,
+        "relevant_topic": false,
+        "question_similarity": 0.23762397468090057,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "అల్లు అర్జున్ ఎవరు?",
+        "english_query": "అల్లు అర్జున్ ఎవరు?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.022335050627589226,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "విరాట్ కోహ్లీ ఎవరు?",
+        "english_query": "విరాట్ కోహ్లీ ఎవరు?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 1.6329309801221825e-05,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "పుష్ప సినిమా గురించి చెప్పండి.",
+        "english_query": "పుష్ప సినిమా గురించి చెప్పండి.",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.15753084421157837,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "english_query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.03469209000468254,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ఆస్తమా అంటే ఏమిటి?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-be01eb7b76894d3d",
+        "faq_question": "What are the treatments for Asthma ?",
+        "raw_score": 0.6648691346026089,
+        "relevant_topic": true,
+        "question_similarity": 0.7210190296173096,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "నాకు తరచుగా తలనొప్పి ఎందుకు వస్తుంది?",
+        "english_query": "Why do I often get headaches?",
+        "document_id": "medquad-c0ee15c97b8a373e",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.40230405722508045,
+        "relevant_topic": true,
+        "question_similarity": 0.7558283805847168,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "bm25:translate:te": [
+      {
+        "split": "calibration",
+        "query": "మధుమేహం లక్షణాలు ఏమిటి?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-692f8d2e379a0ed6",
+        "faq_question": "What is (are) Diabetes ?",
+        "raw_score": 6.663538379232855,
+        "relevant_topic": true,
+        "question_similarity": 0.6755034327507019,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "మైగ్రేన్‌కు కారణాలు ఏమిటి?",
+        "english_query": "What are the causes of migraines?",
+        "document_id": "medquad-ae2e1f00094bf3e4",
+        "faq_question": "What causes Basilar migraine ?",
+        "raw_score": 15.4432825290114,
+        "relevant_topic": true,
+        "question_similarity": 0.8684203028678894,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "migraine"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "పారాసిటమాల్ దుష్ప్రభావాలు ఏమిటి?",
+        "english_query": "What are the side effects of paracetamol?",
+        "document_id": "medquad-6f07da520e05900d",
+        "faq_question": "Do you have information about Cancer Chemotherapy",
+        "raw_score": 6.69590182979114,
+        "relevant_topic": false,
+        "question_similarity": 0.23762397468090057,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "side_effects"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "అల్లు అర్జున్ ఎవరు?",
+        "english_query": "అల్లు అర్జున్ ఎవరు?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.022335050627589226,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "విరాట్ కోహ్లీ ఎవరు?",
+        "english_query": "విరాట్ కోహ్లీ ఎవరు?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 1.6329309801221825e-05,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "english_query": "భారత ప్రధానమంత్రి ఎవరు?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.03469209000468254,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ఆస్తమా అంటే ఏమిటి?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-d59abdd60df5d9d9",
+        "faq_question": "How to prevent Asthma ?",
+        "raw_score": 11.145928983363312,
+        "relevant_topic": true,
+        "question_similarity": 0.7398776412010193,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "నాకు తరచుగా తలనొప్పి ఎందుకు వస్తుంది?",
+        "english_query": "Why do I often get headaches?",
+        "document_id": "medquad-c0ee15c97b8a373e",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 9.285010241088479,
+        "relevant_topic": true,
+        "question_similarity": 0.7558283805847168,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": true
+      }
+    ],
+    "semantic:translate:ta": [
+      {
+        "split": "calibration",
+        "query": "நீரிழிவு நோயின் அறிகுறிகள் என்ன?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-2cd2681e7368ea69",
+        "faq_question": "What are the symptoms of Your Guide to Diabetes: Type 1 and Type 2 ?",
+        "raw_score": 0.8811297416687012,
+        "relevant_topic": true,
+        "question_similarity": 0.8510316610336304,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-05359abe8d0fb2fb",
+        "faq_question": "What is (are) Tuberculosis ?",
+        "raw_score": 0.7578004598617554,
+        "relevant_topic": true,
+        "question_similarity": 0.8075435757637024,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "tuberculosis"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "சோதனை Zorvex-99 நோய்க்கான சிகிச்சை என்ன?",
+        "english_query": "What is the treatment of experimental Zorvex-99 disease?",
+        "document_id": "medquad-00b4208d75100485",
+        "faq_question": "What are the treatments for Herpes zoster oticus ?",
+        "raw_score": 0.5564292669296265,
+        "relevant_topic": false,
+        "question_similarity": 0.6234502196311951,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "அல்லு அர்ஜுன் யார்?",
+        "english_query": "அல்லு அர்ஜுன் யார்?",
+        "document_id": "medquad-097052af8be1c3cd",
+        "faq_question": "What is (are) Glucocorticoid-remediable aldosteronism ?",
+        "raw_score": 0.3062479496002197,
+        "relevant_topic": false,
+        "question_similarity": 0.25345975160598755,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "விராட் கோலி யார்?",
+        "english_query": "விராட் கோலி யார்?",
+        "document_id": "medquad-53b1a2bd3417673f",
+        "faq_question": "What is (are) Dry Mouth ?",
+        "raw_score": 0.3016688823699951,
+        "relevant_topic": false,
+        "question_similarity": 0.1797848641872406,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "english_query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.36039218306541443,
+        "relevant_topic": false,
+        "question_similarity": 0.11848653107881546,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "இந்திய பிரதமர் யார்?",
+        "english_query": "இந்திய பிரதமர் யார்?",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.3199121952056885,
+        "relevant_topic": false,
+        "question_similarity": 0.06560241430997849,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ஆஸ்துமா என்றால் என்ன?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-7021d577d48b5e05",
+        "faq_question": "What is (are) allergic asthma ?",
+        "raw_score": 0.8389370441436768,
+        "relevant_topic": true,
+        "question_similarity": 0.8705340027809143,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "எனக்கு ஏன் அடிக்கடி தலைவலி வருகிறது?",
+        "english_query": "Why do I often have a headache?",
+        "document_id": "medquad-fa155f9f97d8710f",
+        "faq_question": "What is (are) Headache ?",
+        "raw_score": 0.823077917098999,
+        "relevant_topic": true,
+        "question_similarity": 0.777847170829773,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "semantic:direct:ta": [
+      {
+        "split": "calibration",
+        "query": "நீரிழிவு நோயின் அறிகுறிகள் என்ன?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-83c8eccd8d32d9e1",
+        "faq_question": "What is (are) Orofaciodigital syndrome 1 ?",
+        "raw_score": 0.4581974744796753,
+        "relevant_topic": false,
+        "question_similarity": 0.28625139594078064,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-e040574faf1620f1",
+        "faq_question": "How to diagnose Alkhurma Hemorrhagic Fever (AHF) ?",
+        "raw_score": 0.6056780219078064,
+        "relevant_topic": false,
+        "question_similarity": 0.4445926249027252,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "சோதனை Zorvex-99 நோய்க்கான சிகிச்சை என்ன?",
+        "english_query": "What is the treatment of experimental Zorvex-99 disease?",
+        "document_id": "medquad-bd4d6193b0d42759",
+        "faq_question": "What are the treatments for Parasites - Cyclosporiasis (Cyclospora Infection) ?",
+        "raw_score": 0.5555633902549744,
+        "relevant_topic": false,
+        "question_similarity": 0.5983705520629883,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "அல்லு அர்ஜுன் யார்?",
+        "english_query": "அல்லு அர்ஜுன் யார்?",
+        "document_id": "medquad-097052af8be1c3cd",
+        "faq_question": "What is (are) Glucocorticoid-remediable aldosteronism ?",
+        "raw_score": 0.3062479496002197,
+        "relevant_topic": false,
+        "question_similarity": 0.25345975160598755,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "விராட் கோலி யார்?",
+        "english_query": "விராட் கோலி யார்?",
+        "document_id": "medquad-53b1a2bd3417673f",
+        "faq_question": "What is (are) Dry Mouth ?",
+        "raw_score": 0.3016688823699951,
+        "relevant_topic": false,
+        "question_similarity": 0.1797848641872406,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "english_query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.36039218306541443,
+        "relevant_topic": false,
+        "question_similarity": 0.11848653107881546,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "இந்திய பிரதமர் யார்?",
+        "english_query": "இந்திய பிரதமர் யார்?",
+        "document_id": "medquad-2929e3d78594af37",
+        "faq_question": "How to prevent Acanthamoeba - Granulomatous Amebic Encephalitis (GAE); Keratitis ?",
+        "raw_score": 0.3199121952056885,
+        "relevant_topic": false,
+        "question_similarity": 0.06560241430997849,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ஆஸ்துமா என்றால் என்ன?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-4d9f6cdb2a36054b",
+        "faq_question": "What is (are) Hashimoto's encephalitis ?",
+        "raw_score": 0.4150911569595337,
+        "relevant_topic": false,
+        "question_similarity": 0.3804587423801422,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "எனக்கு ஏன் அடிக்கடி தலைவலி வருகிறது?",
+        "english_query": "Why do I often have a headache?",
+        "document_id": "medquad-e6d2b22ba8c135a1",
+        "faq_question": "What is (are) Thoracic Outlet Syndrome ?",
+        "raw_score": 0.39655929803848267,
+        "relevant_topic": false,
+        "question_similarity": 0.2509523630142212,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "tfidf:translate:ta": [
+      {
+        "split": "calibration",
+        "query": "நீரிழிவு நோயின் அறிகுறிகள் என்ன?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-aa4e2c5f1944ffb9",
+        "faq_question": "What are the symptoms of Diabetes mellitus type 1 ?",
+        "raw_score": 0.28183381251405015,
+        "relevant_topic": true,
+        "question_similarity": 0.8423812985420227,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-d24ea4344e3632c8",
+        "faq_question": "What is (are) Mycobacterial Infections ?",
+        "raw_score": 0.22619186088408413,
+        "relevant_topic": true,
+        "question_similarity": 0.4729791581630707,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "tuberculosis"
+        ],
+        "missing_facets": [
+          "diagnosis"
+        ],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "சோதனை Zorvex-99 நோய்க்கான சிகிச்சை என்ன?",
+        "english_query": "What is the treatment of experimental Zorvex-99 disease?",
+        "document_id": "medquad-2c3dafc3de513e89",
+        "faq_question": "Do you have information about Genes and Gene Therapy",
+        "raw_score": 0.11289130555353724,
+        "relevant_topic": false,
+        "question_similarity": 0.3103298842906952,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "experimental"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "அல்லு அர்ஜுன் யார்?",
+        "english_query": "அல்லு அர்ஜுன் யார்?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.044821158051490784,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "விராட் கோலி யார்?",
+        "english_query": "விராட் கோலி யார்?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.03360697627067566,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "english_query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.12887974083423615,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "இந்திய பிரதமர் யார்?",
+        "english_query": "இந்திய பிரதமர் யார்?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.006746409926563501,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ஆஸ்துமா என்றால் என்ன?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-be01eb7b76894d3d",
+        "faq_question": "What are the treatments for Asthma ?",
+        "raw_score": 0.6648691346026089,
+        "relevant_topic": true,
+        "question_similarity": 0.7210190296173096,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "எனக்கு ஏன் அடிக்கடி தலைவலி வருகிறது?",
+        "english_query": "Why do I often have a headache?",
+        "document_id": "medquad-94ddeebb35e17bea",
+        "faq_question": "What is the outlook for Headache ?",
+        "raw_score": 0.379762804618342,
+        "relevant_topic": true,
+        "question_similarity": 0.7974222898483276,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [
+          "causes"
+        ],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ],
+    "bm25:translate:ta": [
+      {
+        "split": "calibration",
+        "query": "நீரிழிவு நோயின் அறிகுறிகள் என்ன?",
+        "english_query": "What are the symptoms of diabetes?",
+        "document_id": "medquad-692f8d2e379a0ed6",
+        "faq_question": "What is (are) Diabetes ?",
+        "raw_score": 6.663538379232855,
+        "relevant_topic": true,
+        "question_similarity": 0.6755034327507019,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "diabetes"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "symptoms"
+        ],
+        "accepted": true
+      },
+      {
+        "split": "calibration",
+        "query": "காசநோய் எவ்வாறு கண்டறியப்படுகிறது?",
+        "english_query": "How is tuberculosis diagnosed?",
+        "document_id": "medquad-d24ea4344e3632c8",
+        "faq_question": "What is (are) Mycobacterial Infections ?",
+        "raw_score": 11.27888977522729,
+        "relevant_topic": true,
+        "question_similarity": 0.4729791581630707,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "tuberculosis"
+        ],
+        "missing_facets": [
+          "diagnosis"
+        ],
+        "requested_facets": [
+          "diagnosis"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "calibration",
+        "query": "சோதனை Zorvex-99 நோய்க்கான சிகிச்சை என்ன?",
+        "english_query": "What is the treatment of experimental Zorvex-99 disease?",
+        "document_id": "medquad-97cc86ed31ca0fd3",
+        "faq_question": "What are the treatments for Marburg hemorrhagic fever (Marburg HF) ?",
+        "raw_score": 11.948192636324574,
+        "relevant_topic": false,
+        "question_similarity": 0.4079098105430603,
+        "topic_coverage": 0.5,
+        "matched_topics": [
+          "experimental"
+        ],
+        "missing_facets": [],
+        "requested_facets": [
+          "treatment"
+        ],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "அல்லு அர்ஜுன் யார்?",
+        "english_query": "அல்லு அர்ஜுன் யார்?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.044821158051490784,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "english_query": "புஷ்பா திரைப்படத்தைப் பற்றி சொல்லுங்கள்.",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": 0.12887974083423615,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "இந்திய பிரதமர் யார்?",
+        "english_query": "இந்திய பிரதமர் யார்?",
+        "document_id": "medquad-71a9e85e35fd3f06",
+        "faq_question": "How to prevent Parasites - Zoonotic Hookworm ?",
+        "raw_score": 0.0,
+        "relevant_topic": false,
+        "question_similarity": -0.006746409926563501,
+        "topic_coverage": 0.0,
+        "matched_topics": [],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": false
+      },
+      {
+        "split": "holdout",
+        "query": "ஆஸ்துமா என்றால் என்ன?",
+        "english_query": "What is asthma?",
+        "document_id": "medquad-d59abdd60df5d9d9",
+        "faq_question": "How to prevent Asthma ?",
+        "raw_score": 11.145928983363312,
+        "relevant_topic": true,
+        "question_similarity": 0.7398776412010193,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "asthma"
+        ],
+        "missing_facets": [],
+        "requested_facets": [],
+        "accepted": true
+      },
+      {
+        "split": "holdout",
+        "query": "எனக்கு ஏன் அடிக்கடி தலைவலி வருகிறது?",
+        "english_query": "Why do I often have a headache?",
+        "document_id": "medquad-94ddeebb35e17bea",
+        "faq_question": "What is the outlook for Headache ?",
+        "raw_score": 9.367236269631862,
+        "relevant_topic": true,
+        "question_similarity": 0.7974222898483276,
+        "topic_coverage": 1.0,
+        "matched_topics": [
+          "headache"
+        ],
+        "missing_facets": [
+          "causes"
+        ],
+        "requested_facets": [
+          "causes"
+        ],
+        "accepted": false
+      }
+    ]
+  }
+}

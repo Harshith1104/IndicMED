@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dataset_sha256": "3da2650e81c161645e20d1762860558693c99cead1d110d3192dc37323ad9af3",
+  "cases_sha256": "dbc415d57accc561230ed192a9d7fa2f754298005dcdbb312203d974810a4c74",
+  "intent": {
+    "medical_margin": 0.18434317409992218,
+    "outside_margin": -0.2613793686032295
+  },
+  "routes": {
+    "semantic:english:en": {
+      "question_similarity": 0.6330066919326782,
+      "topic_coverage": 0.5,
+      "positive_count": 13,
+      "negative_count": 15
+    },
+    "tfidf:english:en": {
+      "question_similarity": 0.4729791581630707,
+      "topic_coverage": 1.0,
+      "positive_count": 13,
+      "negative_count": 15
+    },
+    "bm25:english:en": {
+      "question_similarity": 0.3403501808643341,
+      "topic_coverage": 1.0,
+      "positive_count": 13,
+      "negative_count": 15
+    },
+    "semantic:translate:hi": {
+      "question_similarity": 0.8181034922599792,
+      "topic_coverage": 1e-06,
+      "positive_count": 4,
+      "negative_count": 3
+    },
+    "semantic:direct:hi": {
+      "question_similarity": 0.7301403880119324,
+      "topic_coverage": 1e-06,
+      "positive_count": 4,
+      "negative_count": 3
+    },
+    "tfidf:translate:hi": {
+      "question_similarity": 0.5789595246315002,
+      "topic_coverage": 1e-06,
+      "positive_count": 4,
+      "negative_count": 3
+    },
+    "bm25:translate:hi": {
+      "question_similarity": 0.5789595246315002,
+      "topic_coverage": 1e-06,
+      "positive_count": 4,
+      "negative_count": 3
+    },
+    "semantic:translate:te": {
+      "question_similarity": 0.8268102407455444,
+      "topic_coverage": 1.0,
+      "positive_count": 3,
+      "negative_count": 4
+    },
+    "semantic:direct:te": {
+      "question_similarity": 0.7301403880119324,
+      "topic_coverage": 1.0,
+      "positive_count": 1,
+      "negative_count": 6
+    },
+    "tfidf:translate:te": {
+      "question_similarity": 0.8423812985420227,
+      "topic_coverage": 1.0,
+      "positive_count": 3,
+      "negative_count": 4
+    },
+    "bm25:translate:te": {
+      "question_similarity": 0.6297170519828796,
+      "topic_coverage": 1.0,
+      "positive_count": 3,
+      "negative_count": 4
+    },
+    "semantic:translate:ta": {
+      "question_similarity": 0.8075435757637024,
+      "topic_coverage": 1.0,
+      "positive_count": 3,
+      "negative_count": 3
+    },
+    "semantic:direct:ta": {
+      "question_similarity": 0.7301403880119324,
+      "topic_coverage": 1.0,
+      "positive_count": 1,
+      "negative_count": 5
+    },
+    "tfidf:translate:ta": {
+      "question_similarity": 0.4729791581630707,
+      "topic_coverage": 1.0,
+      "positive_count": 3,
+      "negative_count": 3
+    },
+    "bm25:translate:ta": {
+      "question_similarity": 0.4729791581630707,
+      "topic_coverage": 1.0,
+      "positive_count": 3,
+      "negative_count": 3
+    }
+  }
+}
